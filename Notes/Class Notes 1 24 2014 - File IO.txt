@@ -1,0 +1,27 @@
+EECS162 1/24/2014 Notes
+
+Stream
+
+--Output stream--
+To append to file, use the following command: outStream.open("output.txt", std::ios::app);
+
+Combination of decleration and open:
+ofstream outStream("output.txt", std::ios::app);
+
+Output is buffered, so you have to use [] to force a flush
+outstream.flush();
+
+You need to check and see if you opened your file correctly.
+if( outStream.fail() ){
+	cout << "Output file opening failed" << endl;
+	exit(1); //Die, program, die!
+}
+
+--Formatting Output--
+Floating point number (readable by humans)
+outStream.setf(ios::fixed);
+
+Setting the width
+cout << setw(4) << 10 << setw(5) << 20
+
+Flags

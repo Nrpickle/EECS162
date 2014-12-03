@@ -1,0 +1,358 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+     
+    }
+    }
+  {
+  {
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }  
+/* 
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+*/
+//and if the values are below 0, then it wraps around to the top to check.
+  bool cont = true;
+  bool cont = true;  //Passed back to the while loop
+bool manager(life & game){
+bool simManager(life & game){
+      break;
+      break;
+      break;
+      break;
+      break;
+      break;
+      break;
+      break;
+      break;
+      break;
+      break;
+      break;
+      break;
+    case 1: //Read in from a file
+    case 1:  //Run a simulation for n generations
+    case 2:  //Manually invoke life
+    case 2: //Save to a file
+    case 3:  //Manually destroy life
+    case 3: //Run a simulation
+    case 4:  //Display current simulation
+    case 4: //Display current simulation
+    case 5:  //Fill with random life
+    case 5: //Quit from the application
+    case 6:  //Clear the board
+    case 7:  //Return to previous menu
+  char resp;  //Used to get the user's response
+  cin >> choice;
+  cin >> choice;
+  cin >> filename;
+  cin >> filename;
+      cin >> num1;
+      cin >> num1;
+      cin >> num1;
+      cin >> num1;
+      cin >> num2;
+      cin >> num2;
+      cin >> num2;
+      cont = false;
+      cont = false;
+  //Copying the array modified in modCell(int,int,int) into the main world
+	cout << " ";
+    cout << "1: Load a file" << endl;
+    cout << "1: Run simulation for n generations" << endl;
+    cout << "2: Manually invoke life" << endl;
+    cout << "2: Save to a file" << endl;
+    cout << "3: Manually destroy life" << endl;
+    cout << "3: Simulation Options (inc. run)" << endl;
+    cout << "4: Display current simulation" << endl;
+    cout << "4: Display current simulation" << endl;
+    cout << "5: Exit the application" << endl;
+    cout << "5: Fill with random life" << endl;
+    cout << "6: Clear the sim" << endl;
+    cout << "7: Return to previous menu" << endl;
+      cout << "Col: ";
+      cout << "Col: ";
+    cout << endl;
+    cout << endl;
+    cout << endl;
+    cout << endl;
+  cout << endl;
+  cout << endl;
+  cout << "File inputted." << endl;
+  cout << "File outputted." << endl;
+    cout << "Generation: " << i+1 << endl;  //+1 so that the first generation is '1' and the last is 'n'
+      //      cout << getNumSurrounding(i,j);
+  cout << "Please enter a choice: ";
+  cout << "Please enter a choice: ";
+      cout << "Please enter the number of generations you want to sim: ";
+      cout << "Please enter the number of life forms to be placed randomly: ";
+      cout << "Please enter the random seed you want, or -1 for time(NULL) random: ";
+      cout << "Please enter the row and column that you want to destroy life. Index 0." << endl;
+      cout << "Please enter the row and column that you want to invoke life. Index 0." << endl;
+  cout << "Please enter the save name: ";
+  cout << "Please enter the save name: ";
+      cout << "Row: ";
+      cout << "Row: ";
+      cout << "Sim cleared." << endl;
+      cout << "Successfully randomized board." << endl;
+    cout << "That file does not exist. Please try again." << endl;
+      cout << "That is not a valid answer." << endl;
+    cout << "Those are not valid coordinates." << endl;
+    cout << "Those are not valid coordinates." << endl;
+        cout << world[i][j];
+      cout << "You did not enter a valid choice." << endl;
+    default:
+    default:
+//Default (only) constructor creates a blank board full of 'dead' cells. 
+//Determines if the passed row and col are valid, then destroys life in the designated cell if they are
+//Determines if the passed row and col are valid, then invokes life in the designated cell if they are
+    disp();
+//Doesn't output 0's so that they can be used as a dead character
+EECS 162
+  else
+      else
+  else if (col == 0){
+  else if(col == 0 && world[(row+1)%windowHeight][windowWidth-1] == alive)
+  else if(col == 0 && world[row][windowWidth-1] == alive)
+  else if (id == 2){ //Simulation related options
+  else if (row == 0){
+  else if(row == 0 && world[windowHeight-1][(col+1)%windowWidth] == alive)
+  else if(row == 0 && world[windowHeight-1][col] == alive)
+  //  else if(row == windowHeight-1 && world[0][col-1]i
+  else if (surr == 2)
+  else if(surr == 3)    //Birth
+  else if (surr > 3){  //Overcrowding
+  else {  //In this case, both col and row are 0
+  else {  //Invalid input
+  else {  //Invalid input
+    evolve();
+Feb 2014
+  //Fills the board with blank spaces
+  //Fills the board with blank spaces
+  //Fills the board with blank spaces
+//Fills the board with blank spaces
+//Fills the world with random life, based on a seed #, filling it with 'number' cells.
+  //Fills the world with some alive cells
+  //Fills the world with some alive cells
+  //  for(int i = 0; i < 1000; ++i)
+  for(int i = 0; i < n; ++i){
+  for(int i = 0; i < number+1; ++i)
+  for(int i = 0; i < windowHeight-1; ++i){
+  for(int i = 0; i < windowHeight-1; ++i){
+  for(int i = 0; i < windowHeight; ++i)
+  for(int i = 0; i < windowHeight; ++i)
+  for(int i = 0; i < windowHeight; ++i)
+  for(int i = 0; i < windowHeight; ++i)
+  for(int i = 0; i < windowHeight; ++i){
+  for(int i = 0; i < windowHeight; ++i){
+    for(int j = 0; j < windowWidth-1; ++j)
+    for(int j = 0; j < windowWidth-1; ++j)
+    for(int j = 0; j < windowWidth; ++j)
+    for(int j = 0; j < windowWidth; ++j)
+    for(int j = 0; j < windowWidth; ++j)
+    for(int j = 0; j < windowWidth; ++j)
+    for(int j = 0; j < windowWidth; ++j){
+    for(int j = 0; j < windowWidth; ++j){
+      game.clear();
+      game.destroyLife(num1,num2);
+      game.disp();
+      game.disp();
+      game.input();
+      game.invokeLife(num1,num2);
+      game.output();
+      game.randomLife(num1, num2);
+      game.runSim(num1);
+  //Glider
+  if(id == 1){ //Menu for the main program
+  if(!input){
+  if(row < windowHeight -1 && col < windowWidth-1){ //Check for valid input
+  if(row < windowHeight -1 && col < windowWidth-1){ //Check for valid input
+  if(seed >= 0)
+  ifstream input(filename.c_str());
+  if(surr <=1)         //Lonliness
+      if(world[i][j] == '0')
+  if(world[row-1][col-1] == alive && (row > 0 && col > 0))
+  if(world[row-1][(col+1)%windowWidth] == alive && (row > 0)) 
+  if(world[row-1][col] == alive && row > 0)
+  if(world[(row+1)%(windowHeight)][col-1] == alive && col>0 )
+  if(world[(row+1)%windowHeight][(col+1)%windowWidth] == alive)
+  if(world[(row+1)%windowHeight][col] == alive )
+    if (world[row-1][windowWidth-1] == alive)
+  if(world[row][col-1] == alive && (col > 0))
+  if(world[row][(col+1)%windowWidth] == alive)
+    if (world[windowHeight-1][col-1] == alive)
+    if (world[windowHeight-1][windowWidth-1] == alive)
+#include "main.hpp"
+  input.close();
+//Inputs a file into the current world
+      input >> world[i][j];
+  int choice = -1;
+  int choice = -1;  //Stores the user's choice
+int life::getNumSurrounding(int row, int col){
+int main(){
+  int num1, num2;  //Multi-purpose numbers that can be used in the switch case
+  int sum = 0;
+  life game;
+life::life(){
+//Main executing function, returns true until the user tells the application to quit, then it returns a false to the controling while loop
+//Manages printing the different menus for the program
+//Manages the simulation aspect. Called from a while loop inside of manager()
+      modCell(i,j,getNumSurrounding(i,j));
+//Modifies the cell based on the rules of the Game of Life
+    newWorld[row][col] = alive;
+    newWorld[row][col] = dead;
+    newWorld[row][col] = dead;
+    newWorld[row][col] = world[row][col];
+Nick McComb
+  ofstream output(filename.c_str());
+  output.close();
+//Outputs the current world to a file
+//Outputs the world to the screen
+      output << world[i][j];
+//Preforms the task of creating a new generation
+  printMenu(1);
+  printMenu(2);  //Prints the second menu
+    return;
+  return 0;
+  return cont;
+  return cont;
+//Returns the number of living cells surrounding the passed row and col
+  return sum;
+//Runs the simulation for n generations
+//SPECIAL CONDITION: if seed is negative, then time(NULL) is used instead of a seed value
+  srand(1238932); //Arbitrary number
+    srand(seed);
+    srand(time(NULL));
+  string filename;
+  string filename;
+      ++sum;
+      ++sum;
+      ++sum;
+    ++sum;
+    ++sum;
+    ++sum;
+    ++sum;
+    ++sum;
+    ++sum;
+    ++sum;
+    ++sum;
+    ++sum;
+    ++sum;
+    ++sum;
+    ++sum;
+  switch (choice)
+  switch(choice)
+//Task if preformed by creating a new generation stored in a temp variable, then copying that world to the main world
+//The function handles wrapping by modding the values if they go over the maximum values, 
+//The only 2 things that the main function does is instantiate an object of the class life, and loop the managing function.
+//This file is specified by the user
+//This file is specified by the user
+This is the implementation file for an implementation of Conway's Game of Life.
+This program consists of one main class that does most of the processing, and helper functions that help it work.
+    usleep(delayTime);  //Delay so the user can see what is happening
+void life::clear(){ 
+void life::destroyLife(int row, int col){
+void life::disp(){
+void life::evolve(){
+void life::input(){
+void life::invokeLife(int row, int col){
+void life::modCell(int row, int col, int surr){
+void life::output(){
+void life::randomLife(int seed, int number){
+void life::runSim(int n){
+void printMenu(int id){
+  while(manager(game));
+      while(simManager(game));
+     //world[2][3+30] = alive;
+     //world[3][4+30] = alive;
+     //world[4][2+30] = alive; 
+     //world[4][3+30] = alive;
+     //world[4][4+30] = alive;
+      world[i][j] = dead;
+      world[i][j] = dead;
+      world[i][j] = dead;
+      world[i][j] = newWorld[i][j];
+    world[rand() % windowHeight][rand() % windowWidth] = alive;
+  //    world[rand() % windowHeight][rand() % windowWidth] = alive;
+    world[row][col] = alive;
+    world[row][col] = dead;

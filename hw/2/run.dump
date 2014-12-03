@@ -1,0 +1,2286 @@
+
+run:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+0000000000400d78 <_init>:
+  400d78:	48 83 ec 08          	sub    $0x8,%rsp
+  400d7c:	e8 0b 02 00 00       	callq  400f8c <call_gmon_start>
+  400d81:	e8 9a 02 00 00       	callq  401020 <frame_dummy>
+  400d86:	e8 d5 15 00 00       	callq  402360 <__do_global_ctors_aux>
+  400d8b:	48 83 c4 08          	add    $0x8,%rsp
+  400d8f:	c3                   	retq   
+
+Disassembly of section .plt:
+
+0000000000400d90 <_ZNSsC1Ev@plt-0x10>:
+  400d90:	ff 35 6a 24 20 00    	pushq  0x20246a(%rip)        # 603200 <_GLOBAL_OFFSET_TABLE_+0x8>
+  400d96:	ff 25 6c 24 20 00    	jmpq   *0x20246c(%rip)        # 603208 <_GLOBAL_OFFSET_TABLE_+0x10>
+  400d9c:	0f 1f 40 00          	nopl   0x0(%rax)
+
+0000000000400da0 <_ZNSsC1Ev@plt>:
+  400da0:	ff 25 6a 24 20 00    	jmpq   *0x20246a(%rip)        # 603210 <_GLOBAL_OFFSET_TABLE_+0x18>
+  400da6:	68 00 00 00 00       	pushq  $0x0
+  400dab:	e9 e0 ff ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400db0 <_ZNSt14basic_ifstreamIcSt11char_traitsIcEE5closeEv@plt>:
+  400db0:	ff 25 62 24 20 00    	jmpq   *0x202462(%rip)        # 603218 <_GLOBAL_OFFSET_TABLE_+0x20>
+  400db6:	68 01 00 00 00       	pushq  $0x1
+  400dbb:	e9 d0 ff ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400dc0 <_ZNSolsEi@plt>:
+  400dc0:	ff 25 5a 24 20 00    	jmpq   *0x20245a(%rip)        # 603220 <_GLOBAL_OFFSET_TABLE_+0x28>
+  400dc6:	68 02 00 00 00       	pushq  $0x2
+  400dcb:	e9 c0 ff ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400dd0 <_ZNKSs5c_strEv@plt>:
+  400dd0:	ff 25 52 24 20 00    	jmpq   *0x202452(%rip)        # 603228 <_GLOBAL_OFFSET_TABLE_+0x30>
+  400dd6:	68 03 00 00 00       	pushq  $0x3
+  400ddb:	e9 b0 ff ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400de0 <_ZNSt8ios_base4InitC1Ev@plt>:
+  400de0:	ff 25 4a 24 20 00    	jmpq   *0x20244a(%rip)        # 603230 <_GLOBAL_OFFSET_TABLE_+0x38>
+  400de6:	68 04 00 00 00       	pushq  $0x4
+  400deb:	e9 a0 ff ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400df0 <__libc_start_main@plt>:
+  400df0:	ff 25 42 24 20 00    	jmpq   *0x202442(%rip)        # 603238 <_GLOBAL_OFFSET_TABLE_+0x40>
+  400df6:	68 05 00 00 00       	pushq  $0x5
+  400dfb:	e9 90 ff ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400e00 <__cxa_atexit@plt>:
+  400e00:	ff 25 3a 24 20 00    	jmpq   *0x20243a(%rip)        # 603240 <_GLOBAL_OFFSET_TABLE_+0x48>
+  400e06:	68 06 00 00 00       	pushq  $0x6
+  400e0b:	e9 80 ff ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400e10 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_c@plt>:
+  400e10:	ff 25 32 24 20 00    	jmpq   *0x202432(%rip)        # 603248 <_GLOBAL_OFFSET_TABLE_+0x50>
+  400e16:	68 07 00 00 00       	pushq  $0x7
+  400e1b:	e9 70 ff ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400e20 <_ZNSt8ios_base4InitD1Ev@plt>:
+  400e20:	ff 25 2a 24 20 00    	jmpq   *0x20242a(%rip)        # 603250 <_GLOBAL_OFFSET_TABLE_+0x58>
+  400e26:	68 08 00 00 00       	pushq  $0x8
+  400e2b:	e9 60 ff ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>:
+  400e30:	ff 25 22 24 20 00    	jmpq   *0x202422(%rip)        # 603258 <_GLOBAL_OFFSET_TABLE_+0x60>
+  400e36:	68 09 00 00 00       	pushq  $0x9
+  400e3b:	e9 50 ff ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400e40 <_ZStrsIcSt11char_traitsIcESaIcEERSt13basic_istreamIT_T0_ES7_RSbIS4_S5_T1_E@plt>:
+  400e40:	ff 25 1a 24 20 00    	jmpq   *0x20241a(%rip)        # 603260 <_GLOBAL_OFFSET_TABLE_+0x68>
+  400e46:	68 0a 00 00 00       	pushq  $0xa
+  400e4b:	e9 40 ff ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400e50 <_ZNSsD1Ev@plt>:
+  400e50:	ff 25 12 24 20 00    	jmpq   *0x202412(%rip)        # 603268 <_GLOBAL_OFFSET_TABLE_+0x70>
+  400e56:	68 0b 00 00 00       	pushq  $0xb
+  400e5b:	e9 30 ff ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400e60 <_ZNKSt9basic_iosIcSt11char_traitsIcEEntEv@plt>:
+  400e60:	ff 25 0a 24 20 00    	jmpq   *0x20240a(%rip)        # 603270 <_GLOBAL_OFFSET_TABLE_+0x78>
+  400e66:	68 0c 00 00 00       	pushq  $0xc
+  400e6b:	e9 20 ff ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400e70 <usleep@plt>:
+  400e70:	ff 25 02 24 20 00    	jmpq   *0x202402(%rip)        # 603278 <_GLOBAL_OFFSET_TABLE_+0x80>
+  400e76:	68 0d 00 00 00       	pushq  $0xd
+  400e7b:	e9 10 ff ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400e80 <_ZNSt14basic_ifstreamIcSt11char_traitsIcEED1Ev@plt>:
+  400e80:	ff 25 fa 23 20 00    	jmpq   *0x2023fa(%rip)        # 603280 <_GLOBAL_OFFSET_TABLE_+0x88>
+  400e86:	68 0e 00 00 00       	pushq  $0xe
+  400e8b:	e9 00 ff ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400e90 <_ZNSt14basic_ofstreamIcSt11char_traitsIcEED1Ev@plt>:
+  400e90:	ff 25 f2 23 20 00    	jmpq   *0x2023f2(%rip)        # 603288 <_GLOBAL_OFFSET_TABLE_+0x90>
+  400e96:	68 0f 00 00 00       	pushq  $0xf
+  400e9b:	e9 f0 fe ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400ea0 <_ZNSt14basic_ofstreamIcSt11char_traitsIcEE5closeEv@plt>:
+  400ea0:	ff 25 ea 23 20 00    	jmpq   *0x2023ea(%rip)        # 603290 <_GLOBAL_OFFSET_TABLE_+0x98>
+  400ea6:	68 10 00 00 00       	pushq  $0x10
+  400eab:	e9 e0 fe ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400eb0 <_ZNSirsERi@plt>:
+  400eb0:	ff 25 e2 23 20 00    	jmpq   *0x2023e2(%rip)        # 603298 <_GLOBAL_OFFSET_TABLE_+0xa0>
+  400eb6:	68 11 00 00 00       	pushq  $0x11
+  400ebb:	e9 d0 fe ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400ec0 <srand@plt>:
+  400ec0:	ff 25 da 23 20 00    	jmpq   *0x2023da(%rip)        # 6032a0 <_GLOBAL_OFFSET_TABLE_+0xa8>
+  400ec6:	68 12 00 00 00       	pushq  $0x12
+  400ecb:	e9 c0 fe ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400ed0 <_ZNSt14basic_ifstreamIcSt11char_traitsIcEEC1EPKcSt13_Ios_Openmode@plt>:
+  400ed0:	ff 25 d2 23 20 00    	jmpq   *0x2023d2(%rip)        # 6032a8 <_GLOBAL_OFFSET_TABLE_+0xb0>
+  400ed6:	68 13 00 00 00       	pushq  $0x13
+  400edb:	e9 b0 fe ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400ee0 <_ZNSolsEPFRSoS_E@plt>:
+  400ee0:	ff 25 ca 23 20 00    	jmpq   *0x2023ca(%rip)        # 6032b0 <_GLOBAL_OFFSET_TABLE_+0xb8>
+  400ee6:	68 14 00 00 00       	pushq  $0x14
+  400eeb:	e9 a0 fe ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400ef0 <_ZNSt14basic_ofstreamIcSt11char_traitsIcEEC1EPKcSt13_Ios_Openmode@plt>:
+  400ef0:	ff 25 c2 23 20 00    	jmpq   *0x2023c2(%rip)        # 6032b8 <_GLOBAL_OFFSET_TABLE_+0xc0>
+  400ef6:	68 15 00 00 00       	pushq  $0x15
+  400efb:	e9 90 fe ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400f00 <_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@plt>:
+  400f00:	ff 25 ba 23 20 00    	jmpq   *0x2023ba(%rip)        # 6032c0 <_GLOBAL_OFFSET_TABLE_+0xc8>
+  400f06:	68 16 00 00 00       	pushq  $0x16
+  400f0b:	e9 80 fe ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400f10 <rand@plt>:
+  400f10:	ff 25 b2 23 20 00    	jmpq   *0x2023b2(%rip)        # 6032c8 <_GLOBAL_OFFSET_TABLE_+0xd0>
+  400f16:	68 17 00 00 00       	pushq  $0x17
+  400f1b:	e9 70 fe ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400f20 <__gxx_personality_v0@plt>:
+  400f20:	ff 25 aa 23 20 00    	jmpq   *0x2023aa(%rip)        # 6032d0 <_GLOBAL_OFFSET_TABLE_+0xd8>
+  400f26:	68 18 00 00 00       	pushq  $0x18
+  400f2b:	e9 60 fe ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400f30 <_Unwind_Resume@plt>:
+  400f30:	ff 25 a2 23 20 00    	jmpq   *0x2023a2(%rip)        # 6032d8 <_GLOBAL_OFFSET_TABLE_+0xe0>
+  400f36:	68 19 00 00 00       	pushq  $0x19
+  400f3b:	e9 50 fe ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400f40 <time@plt>:
+  400f40:	ff 25 9a 23 20 00    	jmpq   *0x20239a(%rip)        # 6032e0 <_GLOBAL_OFFSET_TABLE_+0xe8>
+  400f46:	68 1a 00 00 00       	pushq  $0x1a
+  400f4b:	e9 40 fe ff ff       	jmpq   400d90 <_init+0x18>
+
+0000000000400f50 <_ZStrsIcSt11char_traitsIcEERSt13basic_istreamIT_T0_ES6_RS3_@plt>:
+  400f50:	ff 25 92 23 20 00    	jmpq   *0x202392(%rip)        # 6032e8 <_GLOBAL_OFFSET_TABLE_+0xf0>
+  400f56:	68 1b 00 00 00       	pushq  $0x1b
+  400f5b:	e9 30 fe ff ff       	jmpq   400d90 <_init+0x18>
+
+Disassembly of section .text:
+
+0000000000400f60 <_start>:
+  400f60:	31 ed                	xor    %ebp,%ebp
+  400f62:	49 89 d1             	mov    %rdx,%r9
+  400f65:	5e                   	pop    %rsi
+  400f66:	48 89 e2             	mov    %rsp,%rdx
+  400f69:	48 83 e4 f0          	and    $0xfffffffffffffff0,%rsp
+  400f6d:	50                   	push   %rax
+  400f6e:	54                   	push   %rsp
+  400f6f:	49 c7 c0 c0 22 40 00 	mov    $0x4022c0,%r8
+  400f76:	48 c7 c1 d0 22 40 00 	mov    $0x4022d0,%rcx
+  400f7d:	48 c7 c7 44 10 40 00 	mov    $0x401044,%rdi
+  400f84:	e8 67 fe ff ff       	callq  400df0 <__libc_start_main@plt>
+  400f89:	f4                   	hlt    
+  400f8a:	90                   	nop
+  400f8b:	90                   	nop
+
+0000000000400f8c <call_gmon_start>:
+  400f8c:	48 83 ec 08          	sub    $0x8,%rsp
+  400f90:	48 8b 05 59 22 20 00 	mov    0x202259(%rip),%rax        # 6031f0 <_DYNAMIC+0x1c0>
+  400f97:	48 85 c0             	test   %rax,%rax
+  400f9a:	74 02                	je     400f9e <call_gmon_start+0x12>
+  400f9c:	ff d0                	callq  *%rax
+  400f9e:	48 83 c4 08          	add    $0x8,%rsp
+  400fa2:	c3                   	retq   
+  400fa3:	90                   	nop
+  400fa4:	90                   	nop
+  400fa5:	90                   	nop
+  400fa6:	90                   	nop
+  400fa7:	90                   	nop
+  400fa8:	90                   	nop
+  400fa9:	90                   	nop
+  400faa:	90                   	nop
+  400fab:	90                   	nop
+  400fac:	90                   	nop
+  400fad:	90                   	nop
+  400fae:	90                   	nop
+  400faf:	90                   	nop
+
+0000000000400fb0 <__do_global_dtors_aux>:
+  400fb0:	55                   	push   %rbp
+  400fb1:	48 89 e5             	mov    %rsp,%rbp
+  400fb4:	53                   	push   %rbx
+  400fb5:	48 83 ec 08          	sub    $0x8,%rsp
+  400fb9:	80 3d 70 25 20 00 00 	cmpb   $0x0,0x202570(%rip)        # 603530 <completed.6349>
+  400fc0:	75 4b                	jne    40100d <__do_global_dtors_aux+0x5d>
+  400fc2:	bb 20 30 60 00       	mov    $0x603020,%ebx
+  400fc7:	48 8b 05 6a 25 20 00 	mov    0x20256a(%rip),%rax        # 603538 <dtor_idx.6351>
+  400fce:	48 81 eb 18 30 60 00 	sub    $0x603018,%rbx
+  400fd5:	48 c1 fb 03          	sar    $0x3,%rbx
+  400fd9:	48 83 eb 01          	sub    $0x1,%rbx
+  400fdd:	48 39 d8             	cmp    %rbx,%rax
+  400fe0:	73 24                	jae    401006 <__do_global_dtors_aux+0x56>
+  400fe2:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+  400fe8:	48 83 c0 01          	add    $0x1,%rax
+  400fec:	48 89 05 45 25 20 00 	mov    %rax,0x202545(%rip)        # 603538 <dtor_idx.6351>
+  400ff3:	ff 14 c5 18 30 60 00 	callq  *0x603018(,%rax,8)
+  400ffa:	48 8b 05 37 25 20 00 	mov    0x202537(%rip),%rax        # 603538 <dtor_idx.6351>
+  401001:	48 39 d8             	cmp    %rbx,%rax
+  401004:	72 e2                	jb     400fe8 <__do_global_dtors_aux+0x38>
+  401006:	c6 05 23 25 20 00 01 	movb   $0x1,0x202523(%rip)        # 603530 <completed.6349>
+  40100d:	48 83 c4 08          	add    $0x8,%rsp
+  401011:	5b                   	pop    %rbx
+  401012:	c9                   	leaveq 
+  401013:	c3                   	retq   
+  401014:	66 66 66 2e 0f 1f 84 	data32 data32 nopw %cs:0x0(%rax,%rax,1)
+  40101b:	00 00 00 00 00 
+
+0000000000401020 <frame_dummy>:
+  401020:	48 83 3d 00 20 20 00 	cmpq   $0x0,0x202000(%rip)        # 603028 <__JCR_END__>
+  401027:	00 
+  401028:	55                   	push   %rbp
+  401029:	48 89 e5             	mov    %rsp,%rbp
+  40102c:	74 12                	je     401040 <frame_dummy+0x20>
+  40102e:	b8 00 00 00 00       	mov    $0x0,%eax
+  401033:	48 85 c0             	test   %rax,%rax
+  401036:	74 08                	je     401040 <frame_dummy+0x20>
+  401038:	bf 28 30 60 00       	mov    $0x603028,%edi
+  40103d:	c9                   	leaveq 
+  40103e:	ff e0                	jmpq   *%rax
+  401040:	c9                   	leaveq 
+  401041:	c3                   	retq   
+  401042:	90                   	nop
+  401043:	90                   	nop
+
+0000000000401044 <main>:
+Feb 2014
+*/
+#include "main.hpp"
+
+//The only 2 things that the main function does is instantiate an object of the class life, and loop the managing function.
+int main(){
+  401044:	55                   	push   %rbp
+  401045:	48 89 e5             	mov    %rsp,%rbp
+  401048:	48 81 ec c0 0d 00 00 	sub    $0xdc0,%rsp
+
+  srand(1238932); //Arbitrary number
+  40104f:	bf 94 e7 12 00       	mov    $0x12e794,%edi
+  401054:	e8 67 fe ff ff       	callq  400ec0 <srand@plt>
+
+  life game;
+  401059:	48 8d 85 40 f2 ff ff 	lea    -0xdc0(%rbp),%rax
+  401060:	48 89 c7             	mov    %rax,%rdi
+  401063:	e8 d4 04 00 00       	callq  40153c <_ZN4lifeC1Ev>
+
+  while(manager(game));
+  401068:	48 8d 85 40 f2 ff ff 	lea    -0xdc0(%rbp),%rax
+  40106f:	48 89 c7             	mov    %rax,%rdi
+  401072:	e8 0b 00 00 00       	callq  401082 <_Z7managerR4life>
+  401077:	84 c0                	test   %al,%al
+  401079:	75 ed                	jne    401068 <main+0x24>
+
+  return 0;
+  40107b:	b8 00 00 00 00       	mov    $0x0,%eax
+}
+  401080:	c9                   	leaveq 
+  401081:	c3                   	retq   
+
+0000000000401082 <_Z7managerR4life>:
+
+//Main executing function, returns true until the user tells the application to quit, then it returns a false to the controling while loop
+bool manager(life & game){
+  401082:	55                   	push   %rbp
+  401083:	48 89 e5             	mov    %rsp,%rbp
+  401086:	48 83 ec 20          	sub    $0x20,%rsp
+  40108a:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+  int choice = -1;  //Stores the user's choice
+  40108e:	c7 45 f8 ff ff ff ff 	movl   $0xffffffff,-0x8(%rbp)
+  bool cont = true;  //Passed back to the while loop
+  401095:	c6 45 fe 01          	movb   $0x1,-0x2(%rbp)
+  char resp;  //Used to get the user's response
+
+  printMenu(1);
+  401099:	bf 01 00 00 00       	mov    $0x1,%edi
+  40109e:	e8 04 03 00 00       	callq  4013a7 <_Z9printMenui>
+  cout << "Please enter a choice: ";
+  4010a3:	be b8 23 40 00       	mov    $0x4023b8,%esi
+  4010a8:	bf 20 34 60 00       	mov    $0x603420,%edi
+  4010ad:	e8 7e fd ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  cin >> choice;
+  4010b2:	48 8d 45 f8          	lea    -0x8(%rbp),%rax
+  4010b6:	48 89 c6             	mov    %rax,%rsi
+  4010b9:	bf 00 33 60 00       	mov    $0x603300,%edi
+  4010be:	e8 ed fd ff ff       	callq  400eb0 <_ZNSirsERi@plt>
+  cout << endl;
+  4010c3:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  4010c8:	bf 20 34 60 00       	mov    $0x603420,%edi
+  4010cd:	e8 0e fe ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+
+  switch (choice)
+  4010d2:	8b 45 f8             	mov    -0x8(%rbp),%eax
+  4010d5:	83 f8 05             	cmp    $0x5,%eax
+  4010d8:	77 4e                	ja     401128 <_Z7managerR4life+0xa6>
+  4010da:	89 c0                	mov    %eax,%eax
+  4010dc:	48 8b 04 c5 f8 23 40 	mov    0x4023f8(,%rax,8),%rax
+  4010e3:	00 
+  4010e4:	ff e0                	jmpq   *%rax
+  {
+    case 1: //Read in from a file
+      game.input();
+  4010e6:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  4010ea:	48 89 c7             	mov    %rax,%rdi
+  4010ed:	e8 b6 0f 00 00       	callq  4020a8 <_ZN4life5inputEv>
+      break;
+  4010f2:	eb 50                	jmp    401144 <_Z7managerR4life+0xc2>
+    case 2: //Save to a file
+      game.output();
+  4010f4:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  4010f8:	48 89 c7             	mov    %rax,%rdi
+  4010fb:	e8 36 0e 00 00       	callq  401f36 <_ZN4life6outputEv>
+      break;
+  401100:	eb 42                	jmp    401144 <_Z7managerR4life+0xc2>
+    case 3: //Run a simulation
+      while(simManager(game));
+  401102:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  401106:	48 89 c7             	mov    %rax,%rdi
+  401109:	e8 3c 00 00 00       	callq  40114a <_Z10simManagerR4life>
+  40110e:	84 c0                	test   %al,%al
+  401110:	75 f0                	jne    401102 <_Z7managerR4life+0x80>
+      break;
+  401112:	eb 30                	jmp    401144 <_Z7managerR4life+0xc2>
+    case 4: //Display current simulation
+      game.disp();
+  401114:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  401118:	48 89 c7             	mov    %rax,%rdi
+  40111b:	e8 7e 04 00 00       	callq  40159e <_ZN4life4dispEv>
+      break;
+  401120:	eb 22                	jmp    401144 <_Z7managerR4life+0xc2>
+    case 5: //Quit from the application
+      cont = false;
+  401122:	c6 45 fe 00          	movb   $0x0,-0x2(%rbp)
+      break;
+  401126:	eb 1c                	jmp    401144 <_Z7managerR4life+0xc2>
+    default:
+      cout << "You did not enter a valid choice." << endl;
+  401128:	be d0 23 40 00       	mov    $0x4023d0,%esi
+  40112d:	bf 20 34 60 00       	mov    $0x603420,%edi
+  401132:	e8 f9 fc ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  401137:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  40113c:	48 89 c7             	mov    %rax,%rdi
+  40113f:	e8 9c fd ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+      break;
+  }
+
+  return cont;
+  401144:	0f b6 45 fe          	movzbl -0x2(%rbp),%eax
+}
+  401148:	c9                   	leaveq 
+  401149:	c3                   	retq   
+
+000000000040114a <_Z10simManagerR4life>:
+
+//Manages the simulation aspect. Called from a while loop inside of manager()
+bool simManager(life & game){
+  40114a:	55                   	push   %rbp
+  40114b:	48 89 e5             	mov    %rsp,%rbp
+  40114e:	48 83 ec 20          	sub    $0x20,%rsp
+  401152:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+  int choice = -1;
+  401156:	c7 45 f8 ff ff ff ff 	movl   $0xffffffff,-0x8(%rbp)
+  bool cont = true;
+  40115d:	c6 45 ff 01          	movb   $0x1,-0x1(%rbp)
+  int num1, num2;  //Multi-purpose numbers that can be used in the switch case
+
+  printMenu(2);  //Prints the second menu
+  401161:	bf 02 00 00 00       	mov    $0x2,%edi
+  401166:	e8 3c 02 00 00       	callq  4013a7 <_Z9printMenui>
+  cout << "Please enter a choice: ";
+  40116b:	be b8 23 40 00       	mov    $0x4023b8,%esi
+  401170:	bf 20 34 60 00       	mov    $0x603420,%edi
+  401175:	e8 b6 fc ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  cin >> choice;
+  40117a:	48 8d 45 f8          	lea    -0x8(%rbp),%rax
+  40117e:	48 89 c6             	mov    %rax,%rsi
+  401181:	bf 00 33 60 00       	mov    $0x603300,%edi
+  401186:	e8 25 fd ff ff       	callq  400eb0 <_ZNSirsERi@plt>
+  cout << endl;
+  40118b:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  401190:	bf 20 34 60 00       	mov    $0x603420,%edi
+  401195:	e8 46 fd ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+
+  switch(choice)
+  40119a:	8b 45 f8             	mov    -0x8(%rbp),%eax
+  40119d:	83 f8 07             	cmp    $0x7,%eax
+  4011a0:	0f 87 df 01 00 00    	ja     401385 <_Z10simManagerR4life+0x23b>
+  4011a6:	89 c0                	mov    %eax,%eax
+  4011a8:	48 8b 04 c5 d8 25 40 	mov    0x4025d8(,%rax,8),%rax
+  4011af:	00 
+  4011b0:	ff e0                	jmpq   *%rax
+  {
+    case 1:  //Run a simulation for n generations
+      cout << "Please enter the number of generations you want to sim: ";
+  4011b2:	be 28 24 40 00       	mov    $0x402428,%esi
+  4011b7:	bf 20 34 60 00       	mov    $0x603420,%edi
+  4011bc:	e8 6f fc ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+      cin >> num1;
+  4011c1:	48 8d 45 f4          	lea    -0xc(%rbp),%rax
+  4011c5:	48 89 c6             	mov    %rax,%rsi
+  4011c8:	bf 00 33 60 00       	mov    $0x603300,%edi
+  4011cd:	e8 de fc ff ff       	callq  400eb0 <_ZNSirsERi@plt>
+      game.runSim(num1);
+  4011d2:	8b 55 f4             	mov    -0xc(%rbp),%edx
+  4011d5:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  4011d9:	89 d6                	mov    %edx,%esi
+  4011db:	48 89 c7             	mov    %rax,%rdi
+  4011de:	e8 83 05 00 00       	callq  401766 <_ZN4life6runSimEi>
+      break;
+  4011e3:	e9 b9 01 00 00       	jmpq   4013a1 <_Z10simManagerR4life+0x257>
+    case 2:  //Manually invoke life
+      cout << "Please enter the row and column that you want to invoke life. Index 0." << endl;
+  4011e8:	be 68 24 40 00       	mov    $0x402468,%esi
+  4011ed:	bf 20 34 60 00       	mov    $0x603420,%edi
+  4011f2:	e8 39 fc ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  4011f7:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  4011fc:	48 89 c7             	mov    %rax,%rdi
+  4011ff:	e8 dc fc ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+      cout << "Row: ";
+  401204:	be af 24 40 00       	mov    $0x4024af,%esi
+  401209:	bf 20 34 60 00       	mov    $0x603420,%edi
+  40120e:	e8 1d fc ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+      cin >> num1;
+  401213:	48 8d 45 f4          	lea    -0xc(%rbp),%rax
+  401217:	48 89 c6             	mov    %rax,%rsi
+  40121a:	bf 00 33 60 00       	mov    $0x603300,%edi
+  40121f:	e8 8c fc ff ff       	callq  400eb0 <_ZNSirsERi@plt>
+      cout << "Col: ";
+  401224:	be b5 24 40 00       	mov    $0x4024b5,%esi
+  401229:	bf 20 34 60 00       	mov    $0x603420,%edi
+  40122e:	e8 fd fb ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+      cin >> num2;
+  401233:	48 8d 45 f0          	lea    -0x10(%rbp),%rax
+  401237:	48 89 c6             	mov    %rax,%rsi
+  40123a:	bf 00 33 60 00       	mov    $0x603300,%edi
+  40123f:	e8 6c fc ff ff       	callq  400eb0 <_ZNSirsERi@plt>
+      game.invokeLife(num1,num2);
+  401244:	8b 55 f0             	mov    -0x10(%rbp),%edx
+  401247:	8b 4d f4             	mov    -0xc(%rbp),%ecx
+  40124a:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  40124e:	89 ce                	mov    %ecx,%esi
+  401250:	48 89 c7             	mov    %rax,%rdi
+  401253:	e8 8e 05 00 00       	callq  4017e6 <_ZN4life10invokeLifeEii>
+      break;
+  401258:	e9 44 01 00 00       	jmpq   4013a1 <_Z10simManagerR4life+0x257>
+    case 3:  //Manually destroy life
+      cout << "Please enter the row and column that you want to destroy life. Index 0." << endl;
+  40125d:	be c0 24 40 00       	mov    $0x4024c0,%esi
+  401262:	bf 20 34 60 00       	mov    $0x603420,%edi
+  401267:	e8 c4 fb ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  40126c:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  401271:	48 89 c7             	mov    %rax,%rdi
+  401274:	e8 67 fc ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+      cout << "Row: ";
+  401279:	be af 24 40 00       	mov    $0x4024af,%esi
+  40127e:	bf 20 34 60 00       	mov    $0x603420,%edi
+  401283:	e8 a8 fb ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+      cin >> num1;
+  401288:	48 8d 45 f4          	lea    -0xc(%rbp),%rax
+  40128c:	48 89 c6             	mov    %rax,%rsi
+  40128f:	bf 00 33 60 00       	mov    $0x603300,%edi
+  401294:	e8 17 fc ff ff       	callq  400eb0 <_ZNSirsERi@plt>
+      cout << "Col: ";
+  401299:	be b5 24 40 00       	mov    $0x4024b5,%esi
+  40129e:	bf 20 34 60 00       	mov    $0x603420,%edi
+  4012a3:	e8 88 fb ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+      cin >> num2;
+  4012a8:	48 8d 45 f0          	lea    -0x10(%rbp),%rax
+  4012ac:	48 89 c6             	mov    %rax,%rsi
+  4012af:	bf 00 33 60 00       	mov    $0x603300,%edi
+  4012b4:	e8 f7 fb ff ff       	callq  400eb0 <_ZNSirsERi@plt>
+      game.destroyLife(num1,num2);
+  4012b9:	8b 55 f0             	mov    -0x10(%rbp),%edx
+  4012bc:	8b 4d f4             	mov    -0xc(%rbp),%ecx
+  4012bf:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  4012c3:	89 ce                	mov    %ecx,%esi
+  4012c5:	48 89 c7             	mov    %rax,%rdi
+  4012c8:	e8 83 05 00 00       	callq  401850 <_ZN4life11destroyLifeEii>
+      break;
+  4012cd:	e9 cf 00 00 00       	jmpq   4013a1 <_Z10simManagerR4life+0x257>
+    case 4:  //Display current simulation
+      game.disp();
+  4012d2:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  4012d6:	48 89 c7             	mov    %rax,%rdi
+  4012d9:	e8 c0 02 00 00       	callq  40159e <_ZN4life4dispEv>
+      break;
+  4012de:	e9 be 00 00 00       	jmpq   4013a1 <_Z10simManagerR4life+0x257>
+    case 5:  //Fill with random life
+      cout << "Please enter the random seed you want, or -1 for time(NULL) random: ";
+  4012e3:	be 08 25 40 00       	mov    $0x402508,%esi
+  4012e8:	bf 20 34 60 00       	mov    $0x603420,%edi
+  4012ed:	e8 3e fb ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+      cin >> num1;
+  4012f2:	48 8d 45 f4          	lea    -0xc(%rbp),%rax
+  4012f6:	48 89 c6             	mov    %rax,%rsi
+  4012f9:	bf 00 33 60 00       	mov    $0x603300,%edi
+  4012fe:	e8 ad fb ff ff       	callq  400eb0 <_ZNSirsERi@plt>
+      cout << "Please enter the number of life forms to be placed randomly: ";
+  401303:	be 50 25 40 00       	mov    $0x402550,%esi
+  401308:	bf 20 34 60 00       	mov    $0x603420,%edi
+  40130d:	e8 1e fb ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+      cin >> num2;
+  401312:	48 8d 45 f0          	lea    -0x10(%rbp),%rax
+  401316:	48 89 c6             	mov    %rax,%rsi
+  401319:	bf 00 33 60 00       	mov    $0x603300,%edi
+  40131e:	e8 8d fb ff ff       	callq  400eb0 <_ZNSirsERi@plt>
+      game.randomLife(num1, num2);
+  401323:	8b 55 f0             	mov    -0x10(%rbp),%edx
+  401326:	8b 4d f4             	mov    -0xc(%rbp),%ecx
+  401329:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  40132d:	89 ce                	mov    %ecx,%esi
+  40132f:	48 89 c7             	mov    %rax,%rdi
+  401332:	e8 83 05 00 00       	callq  4018ba <_ZN4life10randomLifeEii>
+      cout << "Successfully randomized board." << endl;
+  401337:	be 90 25 40 00       	mov    $0x402590,%esi
+  40133c:	bf 20 34 60 00       	mov    $0x603420,%edi
+  401341:	e8 ea fa ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  401346:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  40134b:	48 89 c7             	mov    %rax,%rdi
+  40134e:	e8 8d fb ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+      break;
+  401353:	eb 4c                	jmp    4013a1 <_Z10simManagerR4life+0x257>
+    case 6:  //Clear the board
+      game.clear();
+  401355:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  401359:	48 89 c7             	mov    %rax,%rdi
+  40135c:	e8 73 06 00 00       	callq  4019d4 <_ZN4life5clearEv>
+      cout << "Sim cleared." << endl;
+  401361:	be af 25 40 00       	mov    $0x4025af,%esi
+  401366:	bf 20 34 60 00       	mov    $0x603420,%edi
+  40136b:	e8 c0 fa ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  401370:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  401375:	48 89 c7             	mov    %rax,%rdi
+  401378:	e8 63 fb ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+      break;
+  40137d:	eb 22                	jmp    4013a1 <_Z10simManagerR4life+0x257>
+    case 7:  //Return to previous menu
+      cont = false;
+  40137f:	c6 45 ff 00          	movb   $0x0,-0x1(%rbp)
+      break;
+  401383:	eb 1c                	jmp    4013a1 <_Z10simManagerR4life+0x257>
+    default:
+      cout << "That is not a valid answer." << endl;
+  401385:	be bc 25 40 00       	mov    $0x4025bc,%esi
+  40138a:	bf 20 34 60 00       	mov    $0x603420,%edi
+  40138f:	e8 9c fa ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  401394:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  401399:	48 89 c7             	mov    %rax,%rdi
+  40139c:	e8 3f fb ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+
+  }
+  return cont;
+  4013a1:	0f b6 45 ff          	movzbl -0x1(%rbp),%eax
+}
+  4013a5:	c9                   	leaveq 
+  4013a6:	c3                   	retq   
+
+00000000004013a7 <_Z9printMenui>:
+
+//Manages printing the different menus for the program
+void printMenu(int id){
+  4013a7:	55                   	push   %rbp
+  4013a8:	48 89 e5             	mov    %rsp,%rbp
+  4013ab:	48 83 ec 10          	sub    $0x10,%rsp
+  4013af:	89 7d fc             	mov    %edi,-0x4(%rbp)
+  if(id == 1){ //Menu for the main program
+  4013b2:	83 7d fc 01          	cmpl   $0x1,-0x4(%rbp)
+  4013b6:	0f 85 a0 00 00 00    	jne    40145c <_Z9printMenui+0xb5>
+    cout << endl;
+  4013bc:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  4013c1:	bf 20 34 60 00       	mov    $0x603420,%edi
+  4013c6:	e8 15 fb ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+    cout << "1: Load a file" << endl;
+  4013cb:	be 18 26 40 00       	mov    $0x402618,%esi
+  4013d0:	bf 20 34 60 00       	mov    $0x603420,%edi
+  4013d5:	e8 56 fa ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  4013da:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  4013df:	48 89 c7             	mov    %rax,%rdi
+  4013e2:	e8 f9 fa ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+    cout << "2: Save to a file" << endl;
+  4013e7:	be 27 26 40 00       	mov    $0x402627,%esi
+  4013ec:	bf 20 34 60 00       	mov    $0x603420,%edi
+  4013f1:	e8 3a fa ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  4013f6:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  4013fb:	48 89 c7             	mov    %rax,%rdi
+  4013fe:	e8 dd fa ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+    cout << "3: Simulation Options (inc. run)" << endl;
+  401403:	be 40 26 40 00       	mov    $0x402640,%esi
+  401408:	bf 20 34 60 00       	mov    $0x603420,%edi
+  40140d:	e8 1e fa ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  401412:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  401417:	48 89 c7             	mov    %rax,%rdi
+  40141a:	e8 c1 fa ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+    cout << "4: Display current simulation" << endl;
+  40141f:	be 61 26 40 00       	mov    $0x402661,%esi
+  401424:	bf 20 34 60 00       	mov    $0x603420,%edi
+  401429:	e8 02 fa ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  40142e:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  401433:	48 89 c7             	mov    %rax,%rdi
+  401436:	e8 a5 fa ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+    cout << "5: Exit the application" << endl;
+  40143b:	be 7f 26 40 00       	mov    $0x40267f,%esi
+  401440:	bf 20 34 60 00       	mov    $0x603420,%edi
+  401445:	e8 e6 f9 ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  40144a:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  40144f:	48 89 c7             	mov    %rax,%rdi
+  401452:	e8 89 fa ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+  401457:	e9 dd 00 00 00       	jmpq   401539 <_Z9printMenui+0x192>
+  }
+  else if (id == 2){ //Simulation related options
+  40145c:	83 7d fc 02          	cmpl   $0x2,-0x4(%rbp)
+  401460:	0f 85 d3 00 00 00    	jne    401539 <_Z9printMenui+0x192>
+    cout << endl;
+  401466:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  40146b:	bf 20 34 60 00       	mov    $0x603420,%edi
+  401470:	e8 6b fa ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+    cout << "1: Run simulation for n generations" << endl;
+  401475:	be 98 26 40 00       	mov    $0x402698,%esi
+  40147a:	bf 20 34 60 00       	mov    $0x603420,%edi
+  40147f:	e8 ac f9 ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  401484:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  401489:	48 89 c7             	mov    %rax,%rdi
+  40148c:	e8 4f fa ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+    cout << "2: Manually invoke life" << endl;
+  401491:	be bc 26 40 00       	mov    $0x4026bc,%esi
+  401496:	bf 20 34 60 00       	mov    $0x603420,%edi
+  40149b:	e8 90 f9 ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  4014a0:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  4014a5:	48 89 c7             	mov    %rax,%rdi
+  4014a8:	e8 33 fa ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+    cout << "3: Manually destroy life" << endl;
+  4014ad:	be d4 26 40 00       	mov    $0x4026d4,%esi
+  4014b2:	bf 20 34 60 00       	mov    $0x603420,%edi
+  4014b7:	e8 74 f9 ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  4014bc:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  4014c1:	48 89 c7             	mov    %rax,%rdi
+  4014c4:	e8 17 fa ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+    cout << "4: Display current simulation" << endl;
+  4014c9:	be 61 26 40 00       	mov    $0x402661,%esi
+  4014ce:	bf 20 34 60 00       	mov    $0x603420,%edi
+  4014d3:	e8 58 f9 ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  4014d8:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  4014dd:	48 89 c7             	mov    %rax,%rdi
+  4014e0:	e8 fb f9 ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+    cout << "5: Fill with random life" << endl;
+  4014e5:	be ed 26 40 00       	mov    $0x4026ed,%esi
+  4014ea:	bf 20 34 60 00       	mov    $0x603420,%edi
+  4014ef:	e8 3c f9 ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  4014f4:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  4014f9:	48 89 c7             	mov    %rax,%rdi
+  4014fc:	e8 df f9 ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+    cout << "6: Clear the sim" << endl;
+  401501:	be 06 27 40 00       	mov    $0x402706,%esi
+  401506:	bf 20 34 60 00       	mov    $0x603420,%edi
+  40150b:	e8 20 f9 ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  401510:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  401515:	48 89 c7             	mov    %rax,%rdi
+  401518:	e8 c3 f9 ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+    cout << "7: Return to previous menu" << endl;
+  40151d:	be 17 27 40 00       	mov    $0x402717,%esi
+  401522:	bf 20 34 60 00       	mov    $0x603420,%edi
+  401527:	e8 04 f9 ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  40152c:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  401531:	48 89 c7             	mov    %rax,%rdi
+  401534:	e8 a7 f9 ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+  }
+}
+  401539:	c9                   	leaveq 
+  40153a:	c3                   	retq   
+  40153b:	90                   	nop
+
+000000000040153c <_ZN4lifeC1Ev>:
+
+//Default (only) constructor creates a blank board full of 'dead' cells. 
+life::life(){
+  40153c:	55                   	push   %rbp
+  40153d:	48 89 e5             	mov    %rsp,%rbp
+  401540:	53                   	push   %rbx
+  401541:	48 89 7d e0          	mov    %rdi,-0x20(%rbp)
+  //Fills the board with blank spaces
+  for(int i = 0; i < windowHeight; ++i)
+  401545:	c7 45 f0 00 00 00 00 	movl   $0x0,-0x10(%rbp)
+  40154c:	eb 41                	jmp    40158f <_ZN4lifeC1Ev+0x53>
+    for(int j = 0; j < windowWidth; ++j)
+  40154e:	c7 45 f4 00 00 00 00 	movl   $0x0,-0xc(%rbp)
+  401555:	eb 29                	jmp    401580 <_ZN4lifeC1Ev+0x44>
+      world[i][j] = dead;
+  401557:	8b 45 f0             	mov    -0x10(%rbp),%eax
+  40155a:	8b 55 f4             	mov    -0xc(%rbp),%edx
+  40155d:	48 8b 4d e0          	mov    -0x20(%rbp),%rcx
+  401561:	48 63 da             	movslq %edx,%rbx
+  401564:	48 63 d0             	movslq %eax,%rdx
+  401567:	48 89 d0             	mov    %rdx,%rax
+  40156a:	48 c1 e0 02          	shl    $0x2,%rax
+  40156e:	48 01 d0             	add    %rdx,%rax
+  401571:	48 c1 e0 04          	shl    $0x4,%rax
+  401575:	48 01 d8             	add    %rbx,%rax
+  401578:	c6 04 08 30          	movb   $0x30,(%rax,%rcx,1)
+
+//Default (only) constructor creates a blank board full of 'dead' cells. 
+life::life(){
+  //Fills the board with blank spaces
+  for(int i = 0; i < windowHeight; ++i)
+    for(int j = 0; j < windowWidth; ++j)
+  40157c:	83 45 f4 01          	addl   $0x1,-0xc(%rbp)
+  401580:	83 7d f4 4f          	cmpl   $0x4f,-0xc(%rbp)
+  401584:	0f 9e c0             	setle  %al
+  401587:	84 c0                	test   %al,%al
+  401589:	75 cc                	jne    401557 <_ZN4lifeC1Ev+0x1b>
+}
+
+//Default (only) constructor creates a blank board full of 'dead' cells. 
+life::life(){
+  //Fills the board with blank spaces
+  for(int i = 0; i < windowHeight; ++i)
+  40158b:	83 45 f0 01          	addl   $0x1,-0x10(%rbp)
+  40158f:	83 7d f0 15          	cmpl   $0x15,-0x10(%rbp)
+  401593:	0f 9e c0             	setle  %al
+  401596:	84 c0                	test   %al,%al
+  401598:	75 b4                	jne    40154e <_ZN4lifeC1Ev+0x12>
+     //world[3][4+30] = alive;
+     //world[4][2+30] = alive; 
+     //world[4][3+30] = alive;
+     //world[4][4+30] = alive;
+     
+}
+  40159a:	5b                   	pop    %rbx
+  40159b:	c9                   	leaveq 
+  40159c:	c3                   	retq   
+  40159d:	90                   	nop
+
+000000000040159e <_ZN4life4dispEv>:
+
+//Outputs the world to the screen
+//Doesn't output 0's so that they can be used as a dead character
+void life::disp(){
+  40159e:	55                   	push   %rbp
+  40159f:	48 89 e5             	mov    %rsp,%rbp
+  4015a2:	53                   	push   %rbx
+  4015a3:	48 83 ec 28          	sub    $0x28,%rsp
+  4015a7:	48 89 7d d8          	mov    %rdi,-0x28(%rbp)
+  for(int i = 0; i < windowHeight; ++i){
+  4015ab:	c7 45 e8 00 00 00 00 	movl   $0x0,-0x18(%rbp)
+  4015b2:	e9 99 00 00 00       	jmpq   401650 <_ZN4life4dispEv+0xb2>
+    for(int j = 0; j < windowWidth; ++j){
+  4015b7:	c7 45 ec 00 00 00 00 	movl   $0x0,-0x14(%rbp)
+  4015be:	eb 72                	jmp    401632 <_ZN4life4dispEv+0x94>
+      if(world[i][j] == '0')
+  4015c0:	8b 45 e8             	mov    -0x18(%rbp),%eax
+  4015c3:	8b 55 ec             	mov    -0x14(%rbp),%edx
+  4015c6:	48 8b 4d d8          	mov    -0x28(%rbp),%rcx
+  4015ca:	48 63 da             	movslq %edx,%rbx
+  4015cd:	48 63 d0             	movslq %eax,%rdx
+  4015d0:	48 89 d0             	mov    %rdx,%rax
+  4015d3:	48 c1 e0 02          	shl    $0x2,%rax
+  4015d7:	48 01 d0             	add    %rdx,%rax
+  4015da:	48 c1 e0 04          	shl    $0x4,%rax
+  4015de:	48 01 d8             	add    %rbx,%rax
+  4015e1:	0f b6 04 08          	movzbl (%rax,%rcx,1),%eax
+  4015e5:	3c 30                	cmp    $0x30,%al
+  4015e7:	75 11                	jne    4015fa <_ZN4life4dispEv+0x5c>
+	cout << " ";
+  4015e9:	be 32 27 40 00       	mov    $0x402732,%esi
+  4015ee:	bf 20 34 60 00       	mov    $0x603420,%edi
+  4015f3:	e8 38 f8 ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  4015f8:	eb 34                	jmp    40162e <_ZN4life4dispEv+0x90>
+      else
+        cout << world[i][j];
+  4015fa:	8b 45 e8             	mov    -0x18(%rbp),%eax
+  4015fd:	8b 55 ec             	mov    -0x14(%rbp),%edx
+  401600:	48 8b 4d d8          	mov    -0x28(%rbp),%rcx
+  401604:	48 63 da             	movslq %edx,%rbx
+  401607:	48 63 d0             	movslq %eax,%rdx
+  40160a:	48 89 d0             	mov    %rdx,%rax
+  40160d:	48 c1 e0 02          	shl    $0x2,%rax
+  401611:	48 01 d0             	add    %rdx,%rax
+  401614:	48 c1 e0 04          	shl    $0x4,%rax
+  401618:	48 01 d8             	add    %rbx,%rax
+  40161b:	0f b6 04 08          	movzbl (%rax,%rcx,1),%eax
+  40161f:	0f be c0             	movsbl %al,%eax
+  401622:	89 c6                	mov    %eax,%esi
+  401624:	bf 20 34 60 00       	mov    $0x603420,%edi
+  401629:	e8 e2 f7 ff ff       	callq  400e10 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_c@plt>
+
+//Outputs the world to the screen
+//Doesn't output 0's so that they can be used as a dead character
+void life::disp(){
+  for(int i = 0; i < windowHeight; ++i){
+    for(int j = 0; j < windowWidth; ++j){
+  40162e:	83 45 ec 01          	addl   $0x1,-0x14(%rbp)
+  401632:	83 7d ec 4f          	cmpl   $0x4f,-0x14(%rbp)
+  401636:	0f 9e c0             	setle  %al
+  401639:	84 c0                	test   %al,%al
+  40163b:	75 83                	jne    4015c0 <_ZN4life4dispEv+0x22>
+      if(world[i][j] == '0')
+	cout << " ";
+      else
+        cout << world[i][j];
+    }
+    cout << endl;
+  40163d:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  401642:	bf 20 34 60 00       	mov    $0x603420,%edi
+  401647:	e8 94 f8 ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+}
+
+//Outputs the world to the screen
+//Doesn't output 0's so that they can be used as a dead character
+void life::disp(){
+  for(int i = 0; i < windowHeight; ++i){
+  40164c:	83 45 e8 01          	addl   $0x1,-0x18(%rbp)
+  401650:	83 7d e8 15          	cmpl   $0x15,-0x18(%rbp)
+  401654:	0f 9e c0             	setle  %al
+  401657:	84 c0                	test   %al,%al
+  401659:	0f 85 58 ff ff ff    	jne    4015b7 <_ZN4life4dispEv+0x19>
+      else
+        cout << world[i][j];
+    }
+    cout << endl;
+  }
+}
+  40165f:	48 83 c4 28          	add    $0x28,%rsp
+  401663:	5b                   	pop    %rbx
+  401664:	c9                   	leaveq 
+  401665:	c3                   	retq   
+
+0000000000401666 <_ZN4life6evolveEv>:
+
+//Preforms the task of creating a new generation
+//Task if preformed by creating a new generation stored in a temp variable, then copying that world to the main world
+void life::evolve(){
+  401666:	55                   	push   %rbp
+  401667:	48 89 e5             	mov    %rsp,%rbp
+  40166a:	53                   	push   %rbx
+  40166b:	48 83 ec 28          	sub    $0x28,%rsp
+  40166f:	48 89 7d d8          	mov    %rdi,-0x28(%rbp)
+  for(int i = 0; i < windowHeight; ++i){
+  401673:	c7 45 e0 00 00 00 00 	movl   $0x0,-0x20(%rbp)
+  40167a:	eb 55                	jmp    4016d1 <_ZN4life6evolveEv+0x6b>
+    for(int j = 0; j < windowWidth; ++j){
+  40167c:	c7 45 e4 00 00 00 00 	movl   $0x0,-0x1c(%rbp)
+  401683:	eb 2e                	jmp    4016b3 <_ZN4life6evolveEv+0x4d>
+      //      cout << getNumSurrounding(i,j);
+      modCell(i,j,getNumSurrounding(i,j));
+  401685:	8b 55 e4             	mov    -0x1c(%rbp),%edx
+  401688:	8b 4d e0             	mov    -0x20(%rbp),%ecx
+  40168b:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+  40168f:	89 ce                	mov    %ecx,%esi
+  401691:	48 89 c7             	mov    %rax,%rdi
+  401694:	e8 9d 03 00 00       	callq  401a36 <_ZN4life17getNumSurroundingEii>
+  401699:	89 c1                	mov    %eax,%ecx
+  40169b:	8b 55 e4             	mov    -0x1c(%rbp),%edx
+  40169e:	8b 5d e0             	mov    -0x20(%rbp),%ebx
+  4016a1:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+  4016a5:	89 de                	mov    %ebx,%esi
+  4016a7:	48 89 c7             	mov    %rax,%rdi
+  4016aa:	e8 71 07 00 00       	callq  401e20 <_ZN4life7modCellEiii>
+
+//Preforms the task of creating a new generation
+//Task if preformed by creating a new generation stored in a temp variable, then copying that world to the main world
+void life::evolve(){
+  for(int i = 0; i < windowHeight; ++i){
+    for(int j = 0; j < windowWidth; ++j){
+  4016af:	83 45 e4 01          	addl   $0x1,-0x1c(%rbp)
+  4016b3:	83 7d e4 4f          	cmpl   $0x4f,-0x1c(%rbp)
+  4016b7:	0f 9e c0             	setle  %al
+  4016ba:	84 c0                	test   %al,%al
+  4016bc:	75 c7                	jne    401685 <_ZN4life6evolveEv+0x1f>
+      //      cout << getNumSurrounding(i,j);
+      modCell(i,j,getNumSurrounding(i,j));
+    }
+    cout << endl;
+  4016be:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  4016c3:	bf 20 34 60 00       	mov    $0x603420,%edi
+  4016c8:	e8 13 f8 ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+}
+
+//Preforms the task of creating a new generation
+//Task if preformed by creating a new generation stored in a temp variable, then copying that world to the main world
+void life::evolve(){
+  for(int i = 0; i < windowHeight; ++i){
+  4016cd:	83 45 e0 01          	addl   $0x1,-0x20(%rbp)
+  4016d1:	83 7d e0 15          	cmpl   $0x15,-0x20(%rbp)
+  4016d5:	0f 9e c0             	setle  %al
+  4016d8:	84 c0                	test   %al,%al
+  4016da:	75 a0                	jne    40167c <_ZN4life6evolveEv+0x16>
+    }
+    cout << endl;
+  }
+
+  //Copying the array modified in modCell(int,int,int) into the main world
+  for(int i = 0; i < windowHeight; ++i)
+  4016dc:	c7 45 e8 00 00 00 00 	movl   $0x0,-0x18(%rbp)
+  4016e3:	eb 6e                	jmp    401753 <_ZN4life6evolveEv+0xed>
+    for(int j = 0; j < windowWidth; ++j)
+  4016e5:	c7 45 ec 00 00 00 00 	movl   $0x0,-0x14(%rbp)
+  4016ec:	eb 56                	jmp    401744 <_ZN4life6evolveEv+0xde>
+      world[i][j] = newWorld[i][j];
+  4016ee:	8b 7d e8             	mov    -0x18(%rbp),%edi
+  4016f1:	8b 75 ec             	mov    -0x14(%rbp),%esi
+  4016f4:	8b 45 e8             	mov    -0x18(%rbp),%eax
+  4016f7:	8b 55 ec             	mov    -0x14(%rbp),%edx
+  4016fa:	48 8b 5d d8          	mov    -0x28(%rbp),%rbx
+  4016fe:	48 63 ca             	movslq %edx,%rcx
+  401701:	48 63 d0             	movslq %eax,%rdx
+  401704:	48 89 d0             	mov    %rdx,%rax
+  401707:	48 c1 e0 02          	shl    $0x2,%rax
+  40170b:	48 01 d0             	add    %rdx,%rax
+  40170e:	48 c1 e0 04          	shl    $0x4,%rax
+  401712:	48 8d 04 03          	lea    (%rbx,%rax,1),%rax
+  401716:	48 01 c8             	add    %rcx,%rax
+  401719:	48 05 e0 06 00 00    	add    $0x6e0,%rax
+  40171f:	0f b6 18             	movzbl (%rax),%ebx
+  401722:	48 8b 4d d8          	mov    -0x28(%rbp),%rcx
+  401726:	48 63 f6             	movslq %esi,%rsi
+  401729:	48 63 d7             	movslq %edi,%rdx
+  40172c:	48 89 d0             	mov    %rdx,%rax
+  40172f:	48 c1 e0 02          	shl    $0x2,%rax
+  401733:	48 01 d0             	add    %rdx,%rax
+  401736:	48 c1 e0 04          	shl    $0x4,%rax
+  40173a:	48 01 f0             	add    %rsi,%rax
+  40173d:	88 1c 08             	mov    %bl,(%rax,%rcx,1)
+    cout << endl;
+  }
+
+  //Copying the array modified in modCell(int,int,int) into the main world
+  for(int i = 0; i < windowHeight; ++i)
+    for(int j = 0; j < windowWidth; ++j)
+  401740:	83 45 ec 01          	addl   $0x1,-0x14(%rbp)
+  401744:	83 7d ec 4f          	cmpl   $0x4f,-0x14(%rbp)
+  401748:	0f 9e c0             	setle  %al
+  40174b:	84 c0                	test   %al,%al
+  40174d:	75 9f                	jne    4016ee <_ZN4life6evolveEv+0x88>
+    }
+    cout << endl;
+  }
+
+  //Copying the array modified in modCell(int,int,int) into the main world
+  for(int i = 0; i < windowHeight; ++i)
+  40174f:	83 45 e8 01          	addl   $0x1,-0x18(%rbp)
+  401753:	83 7d e8 15          	cmpl   $0x15,-0x18(%rbp)
+  401757:	0f 9e c0             	setle  %al
+  40175a:	84 c0                	test   %al,%al
+  40175c:	75 87                	jne    4016e5 <_ZN4life6evolveEv+0x7f>
+    for(int j = 0; j < windowWidth; ++j)
+      world[i][j] = newWorld[i][j];
+
+}
+  40175e:	48 83 c4 28          	add    $0x28,%rsp
+  401762:	5b                   	pop    %rbx
+  401763:	c9                   	leaveq 
+  401764:	c3                   	retq   
+  401765:	90                   	nop
+
+0000000000401766 <_ZN4life6runSimEi>:
+
+//Runs the simulation for n generations
+void life::runSim(int n){
+  401766:	55                   	push   %rbp
+  401767:	48 89 e5             	mov    %rsp,%rbp
+  40176a:	53                   	push   %rbx
+  40176b:	48 83 ec 28          	sub    $0x28,%rsp
+  40176f:	48 89 7d d8          	mov    %rdi,-0x28(%rbp)
+  401773:	89 75 d4             	mov    %esi,-0x2c(%rbp)
+
+  for(int i = 0; i < n; ++i){
+  401776:	c7 45 ec 00 00 00 00 	movl   $0x0,-0x14(%rbp)
+  40177d:	eb 52                	jmp    4017d1 <_ZN4life6runSimEi+0x6b>
+    evolve();
+  40177f:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+  401783:	48 89 c7             	mov    %rax,%rdi
+  401786:	e8 db fe ff ff       	callq  401666 <_ZN4life6evolveEv>
+    cout << "Generation: " << i+1 << endl;  //+1 so that the first generation is '1' and the last is 'n'
+  40178b:	8b 45 ec             	mov    -0x14(%rbp),%eax
+  40178e:	8d 58 01             	lea    0x1(%rax),%ebx
+  401791:	be 34 27 40 00       	mov    $0x402734,%esi
+  401796:	bf 20 34 60 00       	mov    $0x603420,%edi
+  40179b:	e8 90 f6 ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  4017a0:	89 de                	mov    %ebx,%esi
+  4017a2:	48 89 c7             	mov    %rax,%rdi
+  4017a5:	e8 16 f6 ff ff       	callq  400dc0 <_ZNSolsEi@plt>
+  4017aa:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  4017af:	48 89 c7             	mov    %rax,%rdi
+  4017b2:	e8 29 f7 ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+    disp();
+  4017b7:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+  4017bb:	48 89 c7             	mov    %rax,%rdi
+  4017be:	e8 db fd ff ff       	callq  40159e <_ZN4life4dispEv>
+    usleep(delayTime);  //Delay so the user can see what is happening
+  4017c3:	bf 50 c3 00 00       	mov    $0xc350,%edi
+  4017c8:	e8 a3 f6 ff ff       	callq  400e70 <usleep@plt>
+}
+
+//Runs the simulation for n generations
+void life::runSim(int n){
+
+  for(int i = 0; i < n; ++i){
+  4017cd:	83 45 ec 01          	addl   $0x1,-0x14(%rbp)
+  4017d1:	8b 45 ec             	mov    -0x14(%rbp),%eax
+  4017d4:	3b 45 d4             	cmp    -0x2c(%rbp),%eax
+  4017d7:	0f 9c c0             	setl   %al
+  4017da:	84 c0                	test   %al,%al
+  4017dc:	75 a1                	jne    40177f <_ZN4life6runSimEi+0x19>
+    evolve();
+    cout << "Generation: " << i+1 << endl;  //+1 so that the first generation is '1' and the last is 'n'
+    disp();
+    usleep(delayTime);  //Delay so the user can see what is happening
+  }
+}
+  4017de:	48 83 c4 28          	add    $0x28,%rsp
+  4017e2:	5b                   	pop    %rbx
+  4017e3:	c9                   	leaveq 
+  4017e4:	c3                   	retq   
+  4017e5:	90                   	nop
+
+00000000004017e6 <_ZN4life10invokeLifeEii>:
+
+//Determines if the passed row and col are valid, then invokes life in the designated cell if they are
+void life::invokeLife(int row, int col){
+  4017e6:	55                   	push   %rbp
+  4017e7:	48 89 e5             	mov    %rsp,%rbp
+  4017ea:	53                   	push   %rbx
+  4017eb:	48 83 ec 18          	sub    $0x18,%rsp
+  4017ef:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+  4017f3:	89 75 e4             	mov    %esi,-0x1c(%rbp)
+  4017f6:	89 55 e0             	mov    %edx,-0x20(%rbp)
+  if(row < windowHeight -1 && col < windowWidth-1){ //Check for valid input
+  4017f9:	83 7d e4 14          	cmpl   $0x14,-0x1c(%rbp)
+  4017fd:	7f 2d                	jg     40182c <_ZN4life10invokeLifeEii+0x46>
+  4017ff:	83 7d e0 4e          	cmpl   $0x4e,-0x20(%rbp)
+  401803:	7f 27                	jg     40182c <_ZN4life10invokeLifeEii+0x46>
+    world[row][col] = alive;
+  401805:	8b 45 e4             	mov    -0x1c(%rbp),%eax
+  401808:	8b 55 e0             	mov    -0x20(%rbp),%edx
+  40180b:	48 8b 4d e8          	mov    -0x18(%rbp),%rcx
+  40180f:	48 63 da             	movslq %edx,%rbx
+  401812:	48 63 d0             	movslq %eax,%rdx
+  401815:	48 89 d0             	mov    %rdx,%rax
+  401818:	48 c1 e0 02          	shl    $0x2,%rax
+  40181c:	48 01 d0             	add    %rdx,%rax
+  40181f:	48 c1 e0 04          	shl    $0x4,%rax
+  401823:	48 01 d8             	add    %rbx,%rax
+  401826:	c6 04 08 2b          	movb   $0x2b,(%rax,%rcx,1)
+  }
+}
+
+//Determines if the passed row and col are valid, then invokes life in the designated cell if they are
+void life::invokeLife(int row, int col){
+  if(row < windowHeight -1 && col < windowWidth-1){ //Check for valid input
+  40182a:	eb 1c                	jmp    401848 <_ZN4life10invokeLifeEii+0x62>
+    world[row][col] = alive;
+  }
+  else {  //Invalid input
+    cout << "Those are not valid coordinates." << endl;
+  40182c:	be 48 27 40 00       	mov    $0x402748,%esi
+  401831:	bf 20 34 60 00       	mov    $0x603420,%edi
+  401836:	e8 f5 f5 ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  40183b:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  401840:	48 89 c7             	mov    %rax,%rdi
+  401843:	e8 98 f6 ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+  }  
+}
+  401848:	48 83 c4 18          	add    $0x18,%rsp
+  40184c:	5b                   	pop    %rbx
+  40184d:	c9                   	leaveq 
+  40184e:	c3                   	retq   
+  40184f:	90                   	nop
+
+0000000000401850 <_ZN4life11destroyLifeEii>:
+
+//Determines if the passed row and col are valid, then destroys life in the designated cell if they are
+void life::destroyLife(int row, int col){
+  401850:	55                   	push   %rbp
+  401851:	48 89 e5             	mov    %rsp,%rbp
+  401854:	53                   	push   %rbx
+  401855:	48 83 ec 18          	sub    $0x18,%rsp
+  401859:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+  40185d:	89 75 e4             	mov    %esi,-0x1c(%rbp)
+  401860:	89 55 e0             	mov    %edx,-0x20(%rbp)
+  if(row < windowHeight -1 && col < windowWidth-1){ //Check for valid input
+  401863:	83 7d e4 14          	cmpl   $0x14,-0x1c(%rbp)
+  401867:	7f 2d                	jg     401896 <_ZN4life11destroyLifeEii+0x46>
+  401869:	83 7d e0 4e          	cmpl   $0x4e,-0x20(%rbp)
+  40186d:	7f 27                	jg     401896 <_ZN4life11destroyLifeEii+0x46>
+    world[row][col] = dead;
+  40186f:	8b 45 e4             	mov    -0x1c(%rbp),%eax
+  401872:	8b 55 e0             	mov    -0x20(%rbp),%edx
+  401875:	48 8b 4d e8          	mov    -0x18(%rbp),%rcx
+  401879:	48 63 da             	movslq %edx,%rbx
+  40187c:	48 63 d0             	movslq %eax,%rdx
+  40187f:	48 89 d0             	mov    %rdx,%rax
+  401882:	48 c1 e0 02          	shl    $0x2,%rax
+  401886:	48 01 d0             	add    %rdx,%rax
+  401889:	48 c1 e0 04          	shl    $0x4,%rax
+  40188d:	48 01 d8             	add    %rbx,%rax
+  401890:	c6 04 08 30          	movb   $0x30,(%rax,%rcx,1)
+  }  
+}
+
+//Determines if the passed row and col are valid, then destroys life in the designated cell if they are
+void life::destroyLife(int row, int col){
+  if(row < windowHeight -1 && col < windowWidth-1){ //Check for valid input
+  401894:	eb 1c                	jmp    4018b2 <_ZN4life11destroyLifeEii+0x62>
+    world[row][col] = dead;
+  }
+  else {  //Invalid input
+    cout << "Those are not valid coordinates." << endl;
+  401896:	be 48 27 40 00       	mov    $0x402748,%esi
+  40189b:	bf 20 34 60 00       	mov    $0x603420,%edi
+  4018a0:	e8 8b f5 ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  4018a5:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  4018aa:	48 89 c7             	mov    %rax,%rdi
+  4018ad:	e8 2e f6 ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+  }
+}
+  4018b2:	48 83 c4 18          	add    $0x18,%rsp
+  4018b6:	5b                   	pop    %rbx
+  4018b7:	c9                   	leaveq 
+  4018b8:	c3                   	retq   
+  4018b9:	90                   	nop
+
+00000000004018ba <_ZN4life10randomLifeEii>:
+
+//Fills the world with random life, based on a seed #, filling it with 'number' cells.
+//SPECIAL CONDITION: if seed is negative, then time(NULL) is used instead of a seed value
+void life::randomLife(int seed, int number){
+  4018ba:	55                   	push   %rbp
+  4018bb:	48 89 e5             	mov    %rsp,%rbp
+  4018be:	53                   	push   %rbx
+  4018bf:	48 83 ec 28          	sub    $0x28,%rsp
+  4018c3:	48 89 7d d8          	mov    %rdi,-0x28(%rbp)
+  4018c7:	89 75 d4             	mov    %esi,-0x2c(%rbp)
+  4018ca:	89 55 d0             	mov    %edx,-0x30(%rbp)
+  if(seed >= 0)
+  4018cd:	83 7d d4 00          	cmpl   $0x0,-0x2c(%rbp)
+  4018d1:	78 0c                	js     4018df <_ZN4life10randomLifeEii+0x25>
+    srand(seed);
+  4018d3:	8b 45 d4             	mov    -0x2c(%rbp),%eax
+  4018d6:	89 c7                	mov    %eax,%edi
+  4018d8:	e8 e3 f5 ff ff       	callq  400ec0 <srand@plt>
+  4018dd:	eb 11                	jmp    4018f0 <_ZN4life10randomLifeEii+0x36>
+  else
+    srand(time(NULL));
+  4018df:	bf 00 00 00 00       	mov    $0x0,%edi
+  4018e4:	e8 57 f6 ff ff       	callq  400f40 <time@plt>
+  4018e9:	89 c7                	mov    %eax,%edi
+  4018eb:	e8 d0 f5 ff ff       	callq  400ec0 <srand@plt>
+
+  //Fills the board with blank spaces
+  for(int i = 0; i < windowHeight; ++i)
+  4018f0:	c7 45 e4 00 00 00 00 	movl   $0x0,-0x1c(%rbp)
+  4018f7:	eb 41                	jmp    40193a <_ZN4life10randomLifeEii+0x80>
+    for(int j = 0; j < windowWidth; ++j)
+  4018f9:	c7 45 e8 00 00 00 00 	movl   $0x0,-0x18(%rbp)
+  401900:	eb 29                	jmp    40192b <_ZN4life10randomLifeEii+0x71>
+      world[i][j] = dead;
+  401902:	8b 45 e4             	mov    -0x1c(%rbp),%eax
+  401905:	8b 55 e8             	mov    -0x18(%rbp),%edx
+  401908:	48 8b 4d d8          	mov    -0x28(%rbp),%rcx
+  40190c:	48 63 da             	movslq %edx,%rbx
+  40190f:	48 63 d0             	movslq %eax,%rdx
+  401912:	48 89 d0             	mov    %rdx,%rax
+  401915:	48 c1 e0 02          	shl    $0x2,%rax
+  401919:	48 01 d0             	add    %rdx,%rax
+  40191c:	48 c1 e0 04          	shl    $0x4,%rax
+  401920:	48 01 d8             	add    %rbx,%rax
+  401923:	c6 04 08 30          	movb   $0x30,(%rax,%rcx,1)
+  else
+    srand(time(NULL));
+
+  //Fills the board with blank spaces
+  for(int i = 0; i < windowHeight; ++i)
+    for(int j = 0; j < windowWidth; ++j)
+  401927:	83 45 e8 01          	addl   $0x1,-0x18(%rbp)
+  40192b:	83 7d e8 4f          	cmpl   $0x4f,-0x18(%rbp)
+  40192f:	0f 9e c0             	setle  %al
+  401932:	84 c0                	test   %al,%al
+  401934:	75 cc                	jne    401902 <_ZN4life10randomLifeEii+0x48>
+    srand(seed);
+  else
+    srand(time(NULL));
+
+  //Fills the board with blank spaces
+  for(int i = 0; i < windowHeight; ++i)
+  401936:	83 45 e4 01          	addl   $0x1,-0x1c(%rbp)
+  40193a:	83 7d e4 15          	cmpl   $0x15,-0x1c(%rbp)
+  40193e:	0f 9e c0             	setle  %al
+  401941:	84 c0                	test   %al,%al
+  401943:	75 b4                	jne    4018f9 <_ZN4life10randomLifeEii+0x3f>
+    for(int j = 0; j < windowWidth; ++j)
+      world[i][j] = dead;
+
+  //Fills the world with some alive cells
+  for(int i = 0; i < number+1; ++i)
+  401945:	c7 45 ec 00 00 00 00 	movl   $0x0,-0x14(%rbp)
+  40194c:	eb 6e                	jmp    4019bc <_ZN4life10randomLifeEii+0x102>
+    world[rand() % windowHeight][rand() % windowWidth] = alive;
+  40194e:	e8 bd f5 ff ff       	callq  400f10 <rand@plt>
+  401953:	89 c1                	mov    %eax,%ecx
+  401955:	ba e9 a2 8b 2e       	mov    $0x2e8ba2e9,%edx
+  40195a:	89 c8                	mov    %ecx,%eax
+  40195c:	f7 ea                	imul   %edx
+  40195e:	c1 fa 02             	sar    $0x2,%edx
+  401961:	89 c8                	mov    %ecx,%eax
+  401963:	c1 f8 1f             	sar    $0x1f,%eax
+  401966:	89 d3                	mov    %edx,%ebx
+  401968:	29 c3                	sub    %eax,%ebx
+  40196a:	6b c3 16             	imul   $0x16,%ebx,%eax
+  40196d:	89 cb                	mov    %ecx,%ebx
+  40196f:	29 c3                	sub    %eax,%ebx
+  401971:	e8 9a f5 ff ff       	callq  400f10 <rand@plt>
+  401976:	89 c1                	mov    %eax,%ecx
+  401978:	ba 67 66 66 66       	mov    $0x66666667,%edx
+  40197d:	89 c8                	mov    %ecx,%eax
+  40197f:	f7 ea                	imul   %edx
+  401981:	c1 fa 05             	sar    $0x5,%edx
+  401984:	89 c8                	mov    %ecx,%eax
+  401986:	c1 f8 1f             	sar    $0x1f,%eax
+  401989:	29 c2                	sub    %eax,%edx
+  40198b:	89 d0                	mov    %edx,%eax
+  40198d:	c1 e0 02             	shl    $0x2,%eax
+  401990:	01 d0                	add    %edx,%eax
+  401992:	c1 e0 04             	shl    $0x4,%eax
+  401995:	89 ca                	mov    %ecx,%edx
+  401997:	29 c2                	sub    %eax,%edx
+  401999:	48 8b 4d d8          	mov    -0x28(%rbp),%rcx
+  40199d:	48 63 f2             	movslq %edx,%rsi
+  4019a0:	48 63 d3             	movslq %ebx,%rdx
+  4019a3:	48 89 d0             	mov    %rdx,%rax
+  4019a6:	48 c1 e0 02          	shl    $0x2,%rax
+  4019aa:	48 01 d0             	add    %rdx,%rax
+  4019ad:	48 c1 e0 04          	shl    $0x4,%rax
+  4019b1:	48 01 f0             	add    %rsi,%rax
+  4019b4:	c6 04 08 2b          	movb   $0x2b,(%rax,%rcx,1)
+  for(int i = 0; i < windowHeight; ++i)
+    for(int j = 0; j < windowWidth; ++j)
+      world[i][j] = dead;
+
+  //Fills the world with some alive cells
+  for(int i = 0; i < number+1; ++i)
+  4019b8:	83 45 ec 01          	addl   $0x1,-0x14(%rbp)
+  4019bc:	8b 45 d0             	mov    -0x30(%rbp),%eax
+  4019bf:	83 c0 01             	add    $0x1,%eax
+  4019c2:	3b 45 ec             	cmp    -0x14(%rbp),%eax
+  4019c5:	0f 9f c0             	setg   %al
+  4019c8:	84 c0                	test   %al,%al
+  4019ca:	75 82                	jne    40194e <_ZN4life10randomLifeEii+0x94>
+    world[rand() % windowHeight][rand() % windowWidth] = alive;
+
+}
+  4019cc:	48 83 c4 28          	add    $0x28,%rsp
+  4019d0:	5b                   	pop    %rbx
+  4019d1:	c9                   	leaveq 
+  4019d2:	c3                   	retq   
+  4019d3:	90                   	nop
+
+00000000004019d4 <_ZN4life5clearEv>:
+
+//Fills the board with blank spaces
+void life::clear(){ 
+  4019d4:	55                   	push   %rbp
+  4019d5:	48 89 e5             	mov    %rsp,%rbp
+  4019d8:	53                   	push   %rbx
+  4019d9:	48 89 7d e0          	mov    %rdi,-0x20(%rbp)
+  //Fills the board with blank spaces
+  for(int i = 0; i < windowHeight; ++i)
+  4019dd:	c7 45 f0 00 00 00 00 	movl   $0x0,-0x10(%rbp)
+  4019e4:	eb 41                	jmp    401a27 <_ZN4life5clearEv+0x53>
+    for(int j = 0; j < windowWidth; ++j)
+  4019e6:	c7 45 f4 00 00 00 00 	movl   $0x0,-0xc(%rbp)
+  4019ed:	eb 29                	jmp    401a18 <_ZN4life5clearEv+0x44>
+      world[i][j] = dead;
+  4019ef:	8b 45 f0             	mov    -0x10(%rbp),%eax
+  4019f2:	8b 55 f4             	mov    -0xc(%rbp),%edx
+  4019f5:	48 8b 4d e0          	mov    -0x20(%rbp),%rcx
+  4019f9:	48 63 da             	movslq %edx,%rbx
+  4019fc:	48 63 d0             	movslq %eax,%rdx
+  4019ff:	48 89 d0             	mov    %rdx,%rax
+  401a02:	48 c1 e0 02          	shl    $0x2,%rax
+  401a06:	48 01 d0             	add    %rdx,%rax
+  401a09:	48 c1 e0 04          	shl    $0x4,%rax
+  401a0d:	48 01 d8             	add    %rbx,%rax
+  401a10:	c6 04 08 30          	movb   $0x30,(%rax,%rcx,1)
+
+//Fills the board with blank spaces
+void life::clear(){ 
+  //Fills the board with blank spaces
+  for(int i = 0; i < windowHeight; ++i)
+    for(int j = 0; j < windowWidth; ++j)
+  401a14:	83 45 f4 01          	addl   $0x1,-0xc(%rbp)
+  401a18:	83 7d f4 4f          	cmpl   $0x4f,-0xc(%rbp)
+  401a1c:	0f 9e c0             	setle  %al
+  401a1f:	84 c0                	test   %al,%al
+  401a21:	75 cc                	jne    4019ef <_ZN4life5clearEv+0x1b>
+}
+
+//Fills the board with blank spaces
+void life::clear(){ 
+  //Fills the board with blank spaces
+  for(int i = 0; i < windowHeight; ++i)
+  401a23:	83 45 f0 01          	addl   $0x1,-0x10(%rbp)
+  401a27:	83 7d f0 15          	cmpl   $0x15,-0x10(%rbp)
+  401a2b:	0f 9e c0             	setle  %al
+  401a2e:	84 c0                	test   %al,%al
+  401a30:	75 b4                	jne    4019e6 <_ZN4life5clearEv+0x12>
+    for(int j = 0; j < windowWidth; ++j)
+      world[i][j] = dead;
+}
+  401a32:	5b                   	pop    %rbx
+  401a33:	c9                   	leaveq 
+  401a34:	c3                   	retq   
+  401a35:	90                   	nop
+
+0000000000401a36 <_ZN4life17getNumSurroundingEii>:
+
+//Returns the number of living cells surrounding the passed row and col
+//The function handles wrapping by modding the values if they go over the maximum values, 
+//and if the values are below 0, then it wraps around to the top to check.
+int life::getNumSurrounding(int row, int col){
+  401a36:	55                   	push   %rbp
+  401a37:	48 89 e5             	mov    %rsp,%rbp
+  401a3a:	53                   	push   %rbx
+  401a3b:	48 89 7d e0          	mov    %rdi,-0x20(%rbp)
+  401a3f:	89 75 dc             	mov    %esi,-0x24(%rbp)
+  401a42:	89 55 d8             	mov    %edx,-0x28(%rbp)
+  int sum = 0;
+  401a45:	c7 45 f4 00 00 00 00 	movl   $0x0,-0xc(%rbp)
+
+  if(world[row-1][col-1] == alive && (row > 0 && col > 0))
+  401a4c:	8b 45 dc             	mov    -0x24(%rbp),%eax
+  401a4f:	8d 50 ff             	lea    -0x1(%rax),%edx
+  401a52:	8b 45 d8             	mov    -0x28(%rbp),%eax
+  401a55:	83 e8 01             	sub    $0x1,%eax
+  401a58:	48 8b 4d e0          	mov    -0x20(%rbp),%rcx
+  401a5c:	48 63 d8             	movslq %eax,%rbx
+  401a5f:	48 63 d2             	movslq %edx,%rdx
+  401a62:	48 89 d0             	mov    %rdx,%rax
+  401a65:	48 c1 e0 02          	shl    $0x2,%rax
+  401a69:	48 01 d0             	add    %rdx,%rax
+  401a6c:	48 c1 e0 04          	shl    $0x4,%rax
+  401a70:	48 01 d8             	add    %rbx,%rax
+  401a73:	0f b6 04 08          	movzbl (%rax,%rcx,1),%eax
+  401a77:	3c 2b                	cmp    $0x2b,%al
+  401a79:	75 12                	jne    401a8d <_ZN4life17getNumSurroundingEii+0x57>
+  401a7b:	83 7d dc 00          	cmpl   $0x0,-0x24(%rbp)
+  401a7f:	7e 0c                	jle    401a8d <_ZN4life17getNumSurroundingEii+0x57>
+  401a81:	83 7d d8 00          	cmpl   $0x0,-0x28(%rbp)
+  401a85:	7e 06                	jle    401a8d <_ZN4life17getNumSurroundingEii+0x57>
+    ++sum;
+  401a87:	83 45 f4 01          	addl   $0x1,-0xc(%rbp)
+//The function handles wrapping by modding the values if they go over the maximum values, 
+//and if the values are below 0, then it wraps around to the top to check.
+int life::getNumSurrounding(int row, int col){
+  int sum = 0;
+
+  if(world[row-1][col-1] == alive && (row > 0 && col > 0))
+  401a8b:	eb 6d                	jmp    401afa <_ZN4life17getNumSurroundingEii+0xc4>
+    ++sum;
+  else if (row == 0){
+  401a8d:	83 7d dc 00          	cmpl   $0x0,-0x24(%rbp)
+  401a91:	75 1e                	jne    401ab1 <_ZN4life17getNumSurroundingEii+0x7b>
+    if (world[windowHeight-1][col-1] == alive)
+  401a93:	8b 45 d8             	mov    -0x28(%rbp),%eax
+  401a96:	83 e8 01             	sub    $0x1,%eax
+  401a99:	48 8b 55 e0          	mov    -0x20(%rbp),%rdx
+  401a9d:	48 98                	cltq   
+  401a9f:	0f b6 84 02 90 06 00 	movzbl 0x690(%rdx,%rax,1),%eax
+  401aa6:	00 
+  401aa7:	3c 2b                	cmp    $0x2b,%al
+  401aa9:	75 4f                	jne    401afa <_ZN4life17getNumSurroundingEii+0xc4>
+      ++sum;
+  401aab:	83 45 f4 01          	addl   $0x1,-0xc(%rbp)
+  401aaf:	eb 49                	jmp    401afa <_ZN4life17getNumSurroundingEii+0xc4>
+  }
+  else if (col == 0){
+  401ab1:	83 7d d8 00          	cmpl   $0x0,-0x28(%rbp)
+  401ab5:	75 30                	jne    401ae7 <_ZN4life17getNumSurroundingEii+0xb1>
+    if (world[row-1][windowWidth-1] == alive)
+  401ab7:	8b 45 dc             	mov    -0x24(%rbp),%eax
+  401aba:	83 e8 01             	sub    $0x1,%eax
+  401abd:	48 8b 4d e0          	mov    -0x20(%rbp),%rcx
+  401ac1:	48 63 d0             	movslq %eax,%rdx
+  401ac4:	48 89 d0             	mov    %rdx,%rax
+  401ac7:	48 c1 e0 02          	shl    $0x2,%rax
+  401acb:	48 01 d0             	add    %rdx,%rax
+  401ace:	48 c1 e0 04          	shl    $0x4,%rax
+  401ad2:	48 8d 04 01          	lea    (%rcx,%rax,1),%rax
+  401ad6:	48 83 c0 4f          	add    $0x4f,%rax
+  401ada:	0f b6 00             	movzbl (%rax),%eax
+  401add:	3c 2b                	cmp    $0x2b,%al
+  401adf:	75 19                	jne    401afa <_ZN4life17getNumSurroundingEii+0xc4>
+      ++sum;
+  401ae1:	83 45 f4 01          	addl   $0x1,-0xc(%rbp)
+  401ae5:	eb 13                	jmp    401afa <_ZN4life17getNumSurroundingEii+0xc4>
+  }
+  else {  //In this case, both col and row are 0
+    if (world[windowHeight-1][windowWidth-1] == alive)
+  401ae7:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+  401aeb:	0f b6 80 df 06 00 00 	movzbl 0x6df(%rax),%eax
+  401af2:	3c 2b                	cmp    $0x2b,%al
+  401af4:	75 04                	jne    401afa <_ZN4life17getNumSurroundingEii+0xc4>
+      ++sum;
+  401af6:	83 45 f4 01          	addl   $0x1,-0xc(%rbp)
+  }
+  if(world[row][col-1] == alive && (col > 0))
+  401afa:	8b 45 dc             	mov    -0x24(%rbp),%eax
+  401afd:	8b 55 d8             	mov    -0x28(%rbp),%edx
+  401b00:	83 ea 01             	sub    $0x1,%edx
+  401b03:	48 8b 4d e0          	mov    -0x20(%rbp),%rcx
+  401b07:	48 63 da             	movslq %edx,%rbx
+  401b0a:	48 63 d0             	movslq %eax,%rdx
+  401b0d:	48 89 d0             	mov    %rdx,%rax
+  401b10:	48 c1 e0 02          	shl    $0x2,%rax
+  401b14:	48 01 d0             	add    %rdx,%rax
+  401b17:	48 c1 e0 04          	shl    $0x4,%rax
+  401b1b:	48 01 d8             	add    %rbx,%rax
+  401b1e:	0f b6 04 08          	movzbl (%rax,%rcx,1),%eax
+  401b22:	3c 2b                	cmp    $0x2b,%al
+  401b24:	75 0c                	jne    401b32 <_ZN4life17getNumSurroundingEii+0xfc>
+  401b26:	83 7d d8 00          	cmpl   $0x0,-0x28(%rbp)
+  401b2a:	7e 06                	jle    401b32 <_ZN4life17getNumSurroundingEii+0xfc>
+    ++sum;
+  401b2c:	83 45 f4 01          	addl   $0x1,-0xc(%rbp)
+  }
+  else {  //In this case, both col and row are 0
+    if (world[windowHeight-1][windowWidth-1] == alive)
+      ++sum;
+  }
+  if(world[row][col-1] == alive && (col > 0))
+  401b30:	eb 31                	jmp    401b63 <_ZN4life17getNumSurroundingEii+0x12d>
+    ++sum;
+  else if(col == 0 && world[row][windowWidth-1] == alive)
+  401b32:	83 7d d8 00          	cmpl   $0x0,-0x28(%rbp)
+  401b36:	75 2b                	jne    401b63 <_ZN4life17getNumSurroundingEii+0x12d>
+  401b38:	8b 45 dc             	mov    -0x24(%rbp),%eax
+  401b3b:	48 8b 4d e0          	mov    -0x20(%rbp),%rcx
+  401b3f:	48 63 d0             	movslq %eax,%rdx
+  401b42:	48 89 d0             	mov    %rdx,%rax
+  401b45:	48 c1 e0 02          	shl    $0x2,%rax
+  401b49:	48 01 d0             	add    %rdx,%rax
+  401b4c:	48 c1 e0 04          	shl    $0x4,%rax
+  401b50:	48 8d 04 01          	lea    (%rcx,%rax,1),%rax
+  401b54:	48 83 c0 4f          	add    $0x4f,%rax
+  401b58:	0f b6 00             	movzbl (%rax),%eax
+  401b5b:	3c 2b                	cmp    $0x2b,%al
+  401b5d:	75 04                	jne    401b63 <_ZN4life17getNumSurroundingEii+0x12d>
+    ++sum;
+  401b5f:	83 45 f4 01          	addl   $0x1,-0xc(%rbp)
+  if(world[(row+1)%(windowHeight)][col-1] == alive && col>0 )
+  401b63:	8b 45 dc             	mov    -0x24(%rbp),%eax
+  401b66:	8d 48 01             	lea    0x1(%rax),%ecx
+  401b69:	ba e9 a2 8b 2e       	mov    $0x2e8ba2e9,%edx
+  401b6e:	89 c8                	mov    %ecx,%eax
+  401b70:	f7 ea                	imul   %edx
+  401b72:	c1 fa 02             	sar    $0x2,%edx
+  401b75:	89 c8                	mov    %ecx,%eax
+  401b77:	c1 f8 1f             	sar    $0x1f,%eax
+  401b7a:	89 d3                	mov    %edx,%ebx
+  401b7c:	29 c3                	sub    %eax,%ebx
+  401b7e:	89 d8                	mov    %ebx,%eax
+  401b80:	6b c0 16             	imul   $0x16,%eax,%eax
+  401b83:	89 ca                	mov    %ecx,%edx
+  401b85:	29 c2                	sub    %eax,%edx
+  401b87:	89 d0                	mov    %edx,%eax
+  401b89:	8b 55 d8             	mov    -0x28(%rbp),%edx
+  401b8c:	83 ea 01             	sub    $0x1,%edx
+  401b8f:	48 8b 4d e0          	mov    -0x20(%rbp),%rcx
+  401b93:	48 63 da             	movslq %edx,%rbx
+  401b96:	48 63 d0             	movslq %eax,%rdx
+  401b99:	48 89 d0             	mov    %rdx,%rax
+  401b9c:	48 c1 e0 02          	shl    $0x2,%rax
+  401ba0:	48 01 d0             	add    %rdx,%rax
+  401ba3:	48 c1 e0 04          	shl    $0x4,%rax
+  401ba7:	48 01 d8             	add    %rbx,%rax
+  401baa:	0f b6 04 08          	movzbl (%rax,%rcx,1),%eax
+  401bae:	3c 2b                	cmp    $0x2b,%al
+  401bb0:	75 0c                	jne    401bbe <_ZN4life17getNumSurroundingEii+0x188>
+  401bb2:	83 7d d8 00          	cmpl   $0x0,-0x28(%rbp)
+  401bb6:	7e 06                	jle    401bbe <_ZN4life17getNumSurroundingEii+0x188>
+    ++sum;
+  401bb8:	83 45 f4 01          	addl   $0x1,-0xc(%rbp)
+  }
+  if(world[row][col-1] == alive && (col > 0))
+    ++sum;
+  else if(col == 0 && world[row][windowWidth-1] == alive)
+    ++sum;
+  if(world[(row+1)%(windowHeight)][col-1] == alive && col>0 )
+  401bbc:	eb 54                	jmp    401c12 <_ZN4life17getNumSurroundingEii+0x1dc>
+    ++sum;
+  else if(col == 0 && world[(row+1)%windowHeight][windowWidth-1] == alive)
+  401bbe:	83 7d d8 00          	cmpl   $0x0,-0x28(%rbp)
+  401bc2:	75 4e                	jne    401c12 <_ZN4life17getNumSurroundingEii+0x1dc>
+  401bc4:	8b 45 dc             	mov    -0x24(%rbp),%eax
+  401bc7:	8d 48 01             	lea    0x1(%rax),%ecx
+  401bca:	ba e9 a2 8b 2e       	mov    $0x2e8ba2e9,%edx
+  401bcf:	89 c8                	mov    %ecx,%eax
+  401bd1:	f7 ea                	imul   %edx
+  401bd3:	c1 fa 02             	sar    $0x2,%edx
+  401bd6:	89 c8                	mov    %ecx,%eax
+  401bd8:	c1 f8 1f             	sar    $0x1f,%eax
+  401bdb:	89 d3                	mov    %edx,%ebx
+  401bdd:	29 c3                	sub    %eax,%ebx
+  401bdf:	89 d8                	mov    %ebx,%eax
+  401be1:	6b c0 16             	imul   $0x16,%eax,%eax
+  401be4:	89 ca                	mov    %ecx,%edx
+  401be6:	29 c2                	sub    %eax,%edx
+  401be8:	89 d0                	mov    %edx,%eax
+  401bea:	48 8b 4d e0          	mov    -0x20(%rbp),%rcx
+  401bee:	48 63 d0             	movslq %eax,%rdx
+  401bf1:	48 89 d0             	mov    %rdx,%rax
+  401bf4:	48 c1 e0 02          	shl    $0x2,%rax
+  401bf8:	48 01 d0             	add    %rdx,%rax
+  401bfb:	48 c1 e0 04          	shl    $0x4,%rax
+  401bff:	48 8d 04 01          	lea    (%rcx,%rax,1),%rax
+  401c03:	48 83 c0 4f          	add    $0x4f,%rax
+  401c07:	0f b6 00             	movzbl (%rax),%eax
+  401c0a:	3c 2b                	cmp    $0x2b,%al
+  401c0c:	75 04                	jne    401c12 <_ZN4life17getNumSurroundingEii+0x1dc>
+    ++sum;
+  401c0e:	83 45 f4 01          	addl   $0x1,-0xc(%rbp)
+  //  else if(row == windowHeight-1 && world[0][col-1]i
+
+  if(world[row-1][col] == alive && row > 0)
+  401c12:	8b 45 dc             	mov    -0x24(%rbp),%eax
+  401c15:	8d 50 ff             	lea    -0x1(%rax),%edx
+  401c18:	8b 45 d8             	mov    -0x28(%rbp),%eax
+  401c1b:	48 8b 4d e0          	mov    -0x20(%rbp),%rcx
+  401c1f:	48 63 d8             	movslq %eax,%rbx
+  401c22:	48 63 d2             	movslq %edx,%rdx
+  401c25:	48 89 d0             	mov    %rdx,%rax
+  401c28:	48 c1 e0 02          	shl    $0x2,%rax
+  401c2c:	48 01 d0             	add    %rdx,%rax
+  401c2f:	48 c1 e0 04          	shl    $0x4,%rax
+  401c33:	48 01 d8             	add    %rbx,%rax
+  401c36:	0f b6 04 08          	movzbl (%rax,%rcx,1),%eax
+  401c3a:	3c 2b                	cmp    $0x2b,%al
+  401c3c:	75 0c                	jne    401c4a <_ZN4life17getNumSurroundingEii+0x214>
+  401c3e:	83 7d dc 00          	cmpl   $0x0,-0x24(%rbp)
+  401c42:	7e 06                	jle    401c4a <_ZN4life17getNumSurroundingEii+0x214>
+    ++sum;
+  401c44:	83 45 f4 01          	addl   $0x1,-0xc(%rbp)
+    ++sum;
+  else if(col == 0 && world[(row+1)%windowHeight][windowWidth-1] == alive)
+    ++sum;
+  //  else if(row == windowHeight-1 && world[0][col-1]i
+
+  if(world[row-1][col] == alive && row > 0)
+  401c48:	eb 1f                	jmp    401c69 <_ZN4life17getNumSurroundingEii+0x233>
+    ++sum;
+  else if(row == 0 && world[windowHeight-1][col] == alive)
+  401c4a:	83 7d dc 00          	cmpl   $0x0,-0x24(%rbp)
+  401c4e:	75 19                	jne    401c69 <_ZN4life17getNumSurroundingEii+0x233>
+  401c50:	8b 45 d8             	mov    -0x28(%rbp),%eax
+  401c53:	48 8b 55 e0          	mov    -0x20(%rbp),%rdx
+  401c57:	48 98                	cltq   
+  401c59:	0f b6 84 02 90 06 00 	movzbl 0x690(%rdx,%rax,1),%eax
+  401c60:	00 
+  401c61:	3c 2b                	cmp    $0x2b,%al
+  401c63:	75 04                	jne    401c69 <_ZN4life17getNumSurroundingEii+0x233>
+    ++sum;
+  401c65:	83 45 f4 01          	addl   $0x1,-0xc(%rbp)
+  if(world[(row+1)%windowHeight][col] == alive )
+  401c69:	8b 45 dc             	mov    -0x24(%rbp),%eax
+  401c6c:	8d 48 01             	lea    0x1(%rax),%ecx
+  401c6f:	ba e9 a2 8b 2e       	mov    $0x2e8ba2e9,%edx
+  401c74:	89 c8                	mov    %ecx,%eax
+  401c76:	f7 ea                	imul   %edx
+  401c78:	c1 fa 02             	sar    $0x2,%edx
+  401c7b:	89 c8                	mov    %ecx,%eax
+  401c7d:	c1 f8 1f             	sar    $0x1f,%eax
+  401c80:	89 d3                	mov    %edx,%ebx
+  401c82:	29 c3                	sub    %eax,%ebx
+  401c84:	89 d8                	mov    %ebx,%eax
+  401c86:	6b c0 16             	imul   $0x16,%eax,%eax
+  401c89:	89 ca                	mov    %ecx,%edx
+  401c8b:	29 c2                	sub    %eax,%edx
+  401c8d:	89 d0                	mov    %edx,%eax
+  401c8f:	8b 55 d8             	mov    -0x28(%rbp),%edx
+  401c92:	48 8b 4d e0          	mov    -0x20(%rbp),%rcx
+  401c96:	48 63 da             	movslq %edx,%rbx
+  401c99:	48 63 d0             	movslq %eax,%rdx
+  401c9c:	48 89 d0             	mov    %rdx,%rax
+  401c9f:	48 c1 e0 02          	shl    $0x2,%rax
+  401ca3:	48 01 d0             	add    %rdx,%rax
+  401ca6:	48 c1 e0 04          	shl    $0x4,%rax
+  401caa:	48 01 d8             	add    %rbx,%rax
+  401cad:	0f b6 04 08          	movzbl (%rax,%rcx,1),%eax
+  401cb1:	3c 2b                	cmp    $0x2b,%al
+  401cb3:	75 04                	jne    401cb9 <_ZN4life17getNumSurroundingEii+0x283>
+    ++sum;
+  401cb5:	83 45 f4 01          	addl   $0x1,-0xc(%rbp)
+
+  if(world[row-1][(col+1)%windowWidth] == alive && (row > 0)) 
+  401cb9:	8b 45 dc             	mov    -0x24(%rbp),%eax
+  401cbc:	8d 70 ff             	lea    -0x1(%rax),%esi
+  401cbf:	8b 45 d8             	mov    -0x28(%rbp),%eax
+  401cc2:	8d 48 01             	lea    0x1(%rax),%ecx
+  401cc5:	ba 67 66 66 66       	mov    $0x66666667,%edx
+  401cca:	89 c8                	mov    %ecx,%eax
+  401ccc:	f7 ea                	imul   %edx
+  401cce:	c1 fa 05             	sar    $0x5,%edx
+  401cd1:	89 c8                	mov    %ecx,%eax
+  401cd3:	c1 f8 1f             	sar    $0x1f,%eax
+  401cd6:	29 c2                	sub    %eax,%edx
+  401cd8:	89 d0                	mov    %edx,%eax
+  401cda:	c1 e0 02             	shl    $0x2,%eax
+  401cdd:	01 d0                	add    %edx,%eax
+  401cdf:	c1 e0 04             	shl    $0x4,%eax
+  401ce2:	89 ca                	mov    %ecx,%edx
+  401ce4:	29 c2                	sub    %eax,%edx
+  401ce6:	48 8b 4d e0          	mov    -0x20(%rbp),%rcx
+  401cea:	48 63 da             	movslq %edx,%rbx
+  401ced:	48 63 d6             	movslq %esi,%rdx
+  401cf0:	48 89 d0             	mov    %rdx,%rax
+  401cf3:	48 c1 e0 02          	shl    $0x2,%rax
+  401cf7:	48 01 d0             	add    %rdx,%rax
+  401cfa:	48 c1 e0 04          	shl    $0x4,%rax
+  401cfe:	48 01 d8             	add    %rbx,%rax
+  401d01:	0f b6 04 08          	movzbl (%rax,%rcx,1),%eax
+  401d05:	3c 2b                	cmp    $0x2b,%al
+  401d07:	75 0c                	jne    401d15 <_ZN4life17getNumSurroundingEii+0x2df>
+  401d09:	83 7d dc 00          	cmpl   $0x0,-0x24(%rbp)
+  401d0d:	7e 06                	jle    401d15 <_ZN4life17getNumSurroundingEii+0x2df>
+    ++sum;
+  401d0f:	83 45 f4 01          	addl   $0x1,-0xc(%rbp)
+  else if(row == 0 && world[windowHeight-1][col] == alive)
+    ++sum;
+  if(world[(row+1)%windowHeight][col] == alive )
+    ++sum;
+
+  if(world[row-1][(col+1)%windowWidth] == alive && (row > 0)) 
+  401d13:	eb 44                	jmp    401d59 <_ZN4life17getNumSurroundingEii+0x323>
+    ++sum;
+  else if(row == 0 && world[windowHeight-1][(col+1)%windowWidth] == alive)
+  401d15:	83 7d dc 00          	cmpl   $0x0,-0x24(%rbp)
+  401d19:	75 3e                	jne    401d59 <_ZN4life17getNumSurroundingEii+0x323>
+  401d1b:	8b 45 d8             	mov    -0x28(%rbp),%eax
+  401d1e:	8d 48 01             	lea    0x1(%rax),%ecx
+  401d21:	ba 67 66 66 66       	mov    $0x66666667,%edx
+  401d26:	89 c8                	mov    %ecx,%eax
+  401d28:	f7 ea                	imul   %edx
+  401d2a:	c1 fa 05             	sar    $0x5,%edx
+  401d2d:	89 c8                	mov    %ecx,%eax
+  401d2f:	c1 f8 1f             	sar    $0x1f,%eax
+  401d32:	29 c2                	sub    %eax,%edx
+  401d34:	89 d0                	mov    %edx,%eax
+  401d36:	c1 e0 02             	shl    $0x2,%eax
+  401d39:	01 d0                	add    %edx,%eax
+  401d3b:	c1 e0 04             	shl    $0x4,%eax
+  401d3e:	89 ca                	mov    %ecx,%edx
+  401d40:	29 c2                	sub    %eax,%edx
+  401d42:	48 8b 4d e0          	mov    -0x20(%rbp),%rcx
+  401d46:	48 63 c2             	movslq %edx,%rax
+  401d49:	0f b6 84 01 90 06 00 	movzbl 0x690(%rcx,%rax,1),%eax
+  401d50:	00 
+  401d51:	3c 2b                	cmp    $0x2b,%al
+  401d53:	75 04                	jne    401d59 <_ZN4life17getNumSurroundingEii+0x323>
+    ++sum;
+  401d55:	83 45 f4 01          	addl   $0x1,-0xc(%rbp)
+  if(world[row][(col+1)%windowWidth] == alive)
+  401d59:	8b 75 dc             	mov    -0x24(%rbp),%esi
+  401d5c:	8b 45 d8             	mov    -0x28(%rbp),%eax
+  401d5f:	8d 48 01             	lea    0x1(%rax),%ecx
+  401d62:	ba 67 66 66 66       	mov    $0x66666667,%edx
+  401d67:	89 c8                	mov    %ecx,%eax
+  401d69:	f7 ea                	imul   %edx
+  401d6b:	c1 fa 05             	sar    $0x5,%edx
+  401d6e:	89 c8                	mov    %ecx,%eax
+  401d70:	c1 f8 1f             	sar    $0x1f,%eax
+  401d73:	29 c2                	sub    %eax,%edx
+  401d75:	89 d0                	mov    %edx,%eax
+  401d77:	c1 e0 02             	shl    $0x2,%eax
+  401d7a:	01 d0                	add    %edx,%eax
+  401d7c:	c1 e0 04             	shl    $0x4,%eax
+  401d7f:	89 ca                	mov    %ecx,%edx
+  401d81:	29 c2                	sub    %eax,%edx
+  401d83:	48 8b 4d e0          	mov    -0x20(%rbp),%rcx
+  401d87:	48 63 da             	movslq %edx,%rbx
+  401d8a:	48 63 d6             	movslq %esi,%rdx
+  401d8d:	48 89 d0             	mov    %rdx,%rax
+  401d90:	48 c1 e0 02          	shl    $0x2,%rax
+  401d94:	48 01 d0             	add    %rdx,%rax
+  401d97:	48 c1 e0 04          	shl    $0x4,%rax
+  401d9b:	48 01 d8             	add    %rbx,%rax
+  401d9e:	0f b6 04 08          	movzbl (%rax,%rcx,1),%eax
+  401da2:	3c 2b                	cmp    $0x2b,%al
+  401da4:	75 04                	jne    401daa <_ZN4life17getNumSurroundingEii+0x374>
+    ++sum;
+  401da6:	83 45 f4 01          	addl   $0x1,-0xc(%rbp)
+  if(world[(row+1)%windowHeight][(col+1)%windowWidth] == alive)
+  401daa:	8b 45 dc             	mov    -0x24(%rbp),%eax
+  401dad:	8d 58 01             	lea    0x1(%rax),%ebx
+  401db0:	ba e9 a2 8b 2e       	mov    $0x2e8ba2e9,%edx
+  401db5:	89 d8                	mov    %ebx,%eax
+  401db7:	f7 ea                	imul   %edx
+  401db9:	c1 fa 02             	sar    $0x2,%edx
+  401dbc:	89 d8                	mov    %ebx,%eax
+  401dbe:	c1 f8 1f             	sar    $0x1f,%eax
+  401dc1:	89 d1                	mov    %edx,%ecx
+  401dc3:	29 c1                	sub    %eax,%ecx
+  401dc5:	6b c1 16             	imul   $0x16,%ecx,%eax
+  401dc8:	89 d9                	mov    %ebx,%ecx
+  401dca:	29 c1                	sub    %eax,%ecx
+  401dcc:	8b 45 d8             	mov    -0x28(%rbp),%eax
+  401dcf:	8d 58 01             	lea    0x1(%rax),%ebx
+  401dd2:	ba 67 66 66 66       	mov    $0x66666667,%edx
+  401dd7:	89 d8                	mov    %ebx,%eax
+  401dd9:	f7 ea                	imul   %edx
+  401ddb:	c1 fa 05             	sar    $0x5,%edx
+  401dde:	89 d8                	mov    %ebx,%eax
+  401de0:	c1 f8 1f             	sar    $0x1f,%eax
+  401de3:	29 c2                	sub    %eax,%edx
+  401de5:	89 d0                	mov    %edx,%eax
+  401de7:	c1 e0 02             	shl    $0x2,%eax
+  401dea:	01 d0                	add    %edx,%eax
+  401dec:	c1 e0 04             	shl    $0x4,%eax
+  401def:	89 da                	mov    %ebx,%edx
+  401df1:	29 c2                	sub    %eax,%edx
+  401df3:	48 8b 5d e0          	mov    -0x20(%rbp),%rbx
+  401df7:	48 63 f2             	movslq %edx,%rsi
+  401dfa:	48 63 d1             	movslq %ecx,%rdx
+  401dfd:	48 89 d0             	mov    %rdx,%rax
+  401e00:	48 c1 e0 02          	shl    $0x2,%rax
+  401e04:	48 01 d0             	add    %rdx,%rax
+  401e07:	48 c1 e0 04          	shl    $0x4,%rax
+  401e0b:	48 01 f0             	add    %rsi,%rax
+  401e0e:	0f b6 04 18          	movzbl (%rax,%rbx,1),%eax
+  401e12:	3c 2b                	cmp    $0x2b,%al
+  401e14:	75 04                	jne    401e1a <_ZN4life17getNumSurroundingEii+0x3e4>
+    ++sum;
+  401e16:	83 45 f4 01          	addl   $0x1,-0xc(%rbp)
+
+  return sum;
+  401e1a:	8b 45 f4             	mov    -0xc(%rbp),%eax
+
+}
+  401e1d:	5b                   	pop    %rbx
+  401e1e:	c9                   	leaveq 
+  401e1f:	c3                   	retq   
+
+0000000000401e20 <_ZN4life7modCellEiii>:
+
+//Modifies the cell based on the rules of the Game of Life
+void life::modCell(int row, int col, int surr){
+  401e20:	55                   	push   %rbp
+  401e21:	48 89 e5             	mov    %rsp,%rbp
+  401e24:	53                   	push   %rbx
+  401e25:	48 89 7d f0          	mov    %rdi,-0x10(%rbp)
+  401e29:	89 75 ec             	mov    %esi,-0x14(%rbp)
+  401e2c:	89 55 e8             	mov    %edx,-0x18(%rbp)
+  401e2f:	89 4d e4             	mov    %ecx,-0x1c(%rbp)
+  if(surr <=1)         //Lonliness
+  401e32:	83 7d e4 01          	cmpl   $0x1,-0x1c(%rbp)
+  401e36:	7f 33                	jg     401e6b <_ZN4life7modCellEiii+0x4b>
+    newWorld[row][col] = dead;
+  401e38:	8b 45 ec             	mov    -0x14(%rbp),%eax
+  401e3b:	8b 55 e8             	mov    -0x18(%rbp),%edx
+  401e3e:	48 8b 5d f0          	mov    -0x10(%rbp),%rbx
+  401e42:	48 63 ca             	movslq %edx,%rcx
+  401e45:	48 63 d0             	movslq %eax,%rdx
+  401e48:	48 89 d0             	mov    %rdx,%rax
+  401e4b:	48 c1 e0 02          	shl    $0x2,%rax
+  401e4f:	48 01 d0             	add    %rdx,%rax
+  401e52:	48 c1 e0 04          	shl    $0x4,%rax
+  401e56:	48 8d 04 03          	lea    (%rbx,%rax,1),%rax
+  401e5a:	48 01 c8             	add    %rcx,%rax
+  401e5d:	48 05 e0 06 00 00    	add    $0x6e0,%rax
+  401e63:	c6 00 30             	movb   $0x30,(%rax)
+  401e66:	e9 c7 00 00 00       	jmpq   401f32 <_ZN4life7modCellEiii+0x112>
+  else if(surr == 3)    //Birth
+  401e6b:	83 7d e4 03          	cmpl   $0x3,-0x1c(%rbp)
+  401e6f:	75 33                	jne    401ea4 <_ZN4life7modCellEiii+0x84>
+    newWorld[row][col] = alive;
+  401e71:	8b 45 ec             	mov    -0x14(%rbp),%eax
+  401e74:	8b 55 e8             	mov    -0x18(%rbp),%edx
+  401e77:	48 8b 5d f0          	mov    -0x10(%rbp),%rbx
+  401e7b:	48 63 ca             	movslq %edx,%rcx
+  401e7e:	48 63 d0             	movslq %eax,%rdx
+  401e81:	48 89 d0             	mov    %rdx,%rax
+  401e84:	48 c1 e0 02          	shl    $0x2,%rax
+  401e88:	48 01 d0             	add    %rdx,%rax
+  401e8b:	48 c1 e0 04          	shl    $0x4,%rax
+  401e8f:	48 8d 04 03          	lea    (%rbx,%rax,1),%rax
+  401e93:	48 01 c8             	add    %rcx,%rax
+  401e96:	48 05 e0 06 00 00    	add    $0x6e0,%rax
+  401e9c:	c6 00 2b             	movb   $0x2b,(%rax)
+  401e9f:	e9 8e 00 00 00       	jmpq   401f32 <_ZN4life7modCellEiii+0x112>
+  else if (surr > 3){  //Overcrowding
+  401ea4:	83 7d e4 03          	cmpl   $0x3,-0x1c(%rbp)
+  401ea8:	7e 30                	jle    401eda <_ZN4life7modCellEiii+0xba>
+    newWorld[row][col] = dead;
+  401eaa:	8b 45 ec             	mov    -0x14(%rbp),%eax
+  401ead:	8b 55 e8             	mov    -0x18(%rbp),%edx
+  401eb0:	48 8b 5d f0          	mov    -0x10(%rbp),%rbx
+  401eb4:	48 63 ca             	movslq %edx,%rcx
+  401eb7:	48 63 d0             	movslq %eax,%rdx
+  401eba:	48 89 d0             	mov    %rdx,%rax
+  401ebd:	48 c1 e0 02          	shl    $0x2,%rax
+  401ec1:	48 01 d0             	add    %rdx,%rax
+  401ec4:	48 c1 e0 04          	shl    $0x4,%rax
+  401ec8:	48 8d 04 03          	lea    (%rbx,%rax,1),%rax
+  401ecc:	48 01 c8             	add    %rcx,%rax
+  401ecf:	48 05 e0 06 00 00    	add    $0x6e0,%rax
+  401ed5:	c6 00 30             	movb   $0x30,(%rax)
+  401ed8:	eb 58                	jmp    401f32 <_ZN4life7modCellEiii+0x112>
+  }
+  else if (surr == 2)
+  401eda:	83 7d e4 02          	cmpl   $0x2,-0x1c(%rbp)
+  401ede:	75 52                	jne    401f32 <_ZN4life7modCellEiii+0x112>
+    newWorld[row][col] = world[row][col];
+  401ee0:	8b 7d ec             	mov    -0x14(%rbp),%edi
+  401ee3:	8b 5d e8             	mov    -0x18(%rbp),%ebx
+  401ee6:	8b 45 ec             	mov    -0x14(%rbp),%eax
+  401ee9:	8b 55 e8             	mov    -0x18(%rbp),%edx
+  401eec:	48 8b 4d f0          	mov    -0x10(%rbp),%rcx
+  401ef0:	48 63 f2             	movslq %edx,%rsi
+  401ef3:	48 63 d0             	movslq %eax,%rdx
+  401ef6:	48 89 d0             	mov    %rdx,%rax
+  401ef9:	48 c1 e0 02          	shl    $0x2,%rax
+  401efd:	48 01 d0             	add    %rdx,%rax
+  401f00:	48 c1 e0 04          	shl    $0x4,%rax
+  401f04:	48 01 f0             	add    %rsi,%rax
+  401f07:	0f b6 0c 08          	movzbl (%rax,%rcx,1),%ecx
+  401f0b:	48 8b 75 f0          	mov    -0x10(%rbp),%rsi
+  401f0f:	48 63 db             	movslq %ebx,%rbx
+  401f12:	48 63 d7             	movslq %edi,%rdx
+  401f15:	48 89 d0             	mov    %rdx,%rax
+  401f18:	48 c1 e0 02          	shl    $0x2,%rax
+  401f1c:	48 01 d0             	add    %rdx,%rax
+  401f1f:	48 c1 e0 04          	shl    $0x4,%rax
+  401f23:	48 8d 04 06          	lea    (%rsi,%rax,1),%rax
+  401f27:	48 01 d8             	add    %rbx,%rax
+  401f2a:	48 05 e0 06 00 00    	add    $0x6e0,%rax
+  401f30:	88 08                	mov    %cl,(%rax)
+
+}
+  401f32:	5b                   	pop    %rbx
+  401f33:	c9                   	leaveq 
+  401f34:	c3                   	retq   
+  401f35:	90                   	nop
+
+0000000000401f36 <_ZN4life6outputEv>:
+
+//Outputs the current world to a file
+//This file is specified by the user
+void life::output(){
+  401f36:	55                   	push   %rbp
+  401f37:	48 89 e5             	mov    %rsp,%rbp
+  401f3a:	41 54                	push   %r12
+  401f3c:	53                   	push   %rbx
+  401f3d:	48 81 ec 20 02 00 00 	sub    $0x220,%rsp
+  401f44:	48 89 bd d8 fd ff ff 	mov    %rdi,-0x228(%rbp)
+  string filename;
+  401f4b:	48 8d 45 e0          	lea    -0x20(%rbp),%rax
+  401f4f:	48 89 c7             	mov    %rax,%rdi
+  401f52:	e8 49 ee ff ff       	callq  400da0 <_ZNSsC1Ev@plt>
+
+  cout << "Please enter the save name: ";
+  401f57:	be 69 27 40 00       	mov    $0x402769,%esi
+  401f5c:	bf 20 34 60 00       	mov    $0x603420,%edi
+  401f61:	e8 ca ee ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  cin >> filename;
+  401f66:	48 8d 45 e0          	lea    -0x20(%rbp),%rax
+  401f6a:	48 89 c6             	mov    %rax,%rsi
+  401f6d:	bf 00 33 60 00       	mov    $0x603300,%edi
+  401f72:	e8 c9 ee ff ff       	callq  400e40 <_ZStrsIcSt11char_traitsIcESaIcEERSt13basic_istreamIT_T0_ES7_RSbIS4_S5_T1_E@plt>
+
+  ofstream output(filename.c_str());
+  401f77:	be 20 00 00 00       	mov    $0x20,%esi
+  401f7c:	bf 10 00 00 00       	mov    $0x10,%edi
+  401f81:	e8 1d 03 00 00       	callq  4022a3 <_ZStorSt13_Ios_OpenmodeS_>
+  401f86:	89 c3                	mov    %eax,%ebx
+  401f88:	48 8d 45 e0          	lea    -0x20(%rbp),%rax
+  401f8c:	48 89 c7             	mov    %rax,%rdi
+  401f8f:	e8 3c ee ff ff       	callq  400dd0 <_ZNKSs5c_strEv@plt>
+  401f94:	48 89 c1             	mov    %rax,%rcx
+  401f97:	48 8d 85 e0 fd ff ff 	lea    -0x220(%rbp),%rax
+  401f9e:	89 da                	mov    %ebx,%edx
+  401fa0:	48 89 ce             	mov    %rcx,%rsi
+  401fa3:	48 89 c7             	mov    %rax,%rdi
+  401fa6:	e8 45 ef ff ff       	callq  400ef0 <_ZNSt14basic_ofstreamIcSt11char_traitsIcEEC1EPKcSt13_Ios_Openmode@plt>
+
+
+  for(int i = 0; i < windowHeight-1; ++i){
+  401fab:	c7 45 e8 00 00 00 00 	movl   $0x0,-0x18(%rbp)
+  401fb2:	eb 58                	jmp    40200c <_ZN4life6outputEv+0xd6>
+    for(int j = 0; j < windowWidth-1; ++j)
+  401fb4:	c7 45 ec 00 00 00 00 	movl   $0x0,-0x14(%rbp)
+  401fbb:	eb 40                	jmp    401ffd <_ZN4life6outputEv+0xc7>
+      output << world[i][j];
+  401fbd:	8b 45 e8             	mov    -0x18(%rbp),%eax
+  401fc0:	8b 55 ec             	mov    -0x14(%rbp),%edx
+  401fc3:	48 8b 8d d8 fd ff ff 	mov    -0x228(%rbp),%rcx
+  401fca:	48 63 da             	movslq %edx,%rbx
+  401fcd:	48 63 d0             	movslq %eax,%rdx
+  401fd0:	48 89 d0             	mov    %rdx,%rax
+  401fd3:	48 c1 e0 02          	shl    $0x2,%rax
+  401fd7:	48 01 d0             	add    %rdx,%rax
+  401fda:	48 c1 e0 04          	shl    $0x4,%rax
+  401fde:	48 01 d8             	add    %rbx,%rax
+  401fe1:	0f b6 04 08          	movzbl (%rax,%rcx,1),%eax
+  401fe5:	0f be d0             	movsbl %al,%edx
+  401fe8:	48 8d 85 e0 fd ff ff 	lea    -0x220(%rbp),%rax
+  401fef:	89 d6                	mov    %edx,%esi
+  401ff1:	48 89 c7             	mov    %rax,%rdi
+  401ff4:	e8 17 ee ff ff       	callq  400e10 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_c@plt>
+
+  ofstream output(filename.c_str());
+
+
+  for(int i = 0; i < windowHeight-1; ++i){
+    for(int j = 0; j < windowWidth-1; ++j)
+  401ff9:	83 45 ec 01          	addl   $0x1,-0x14(%rbp)
+  401ffd:	83 7d ec 4e          	cmpl   $0x4e,-0x14(%rbp)
+  402001:	0f 9e c0             	setle  %al
+  402004:	84 c0                	test   %al,%al
+  402006:	75 b5                	jne    401fbd <_ZN4life6outputEv+0x87>
+  cin >> filename;
+
+  ofstream output(filename.c_str());
+
+
+  for(int i = 0; i < windowHeight-1; ++i){
+  402008:	83 45 e8 01          	addl   $0x1,-0x18(%rbp)
+  40200c:	83 7d e8 14          	cmpl   $0x14,-0x18(%rbp)
+  402010:	0f 9e c0             	setle  %al
+  402013:	84 c0                	test   %al,%al
+  402015:	75 9d                	jne    401fb4 <_ZN4life6outputEv+0x7e>
+    for(int j = 0; j < windowWidth-1; ++j)
+      output << world[i][j];
+  }
+
+  cout << "File outputted." << endl;
+  402017:	be 86 27 40 00       	mov    $0x402786,%esi
+  40201c:	bf 20 34 60 00       	mov    $0x603420,%edi
+  402021:	e8 0a ee ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  402026:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  40202b:	48 89 c7             	mov    %rax,%rdi
+  40202e:	e8 ad ee ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+  output.close();
+  402033:	48 8d 85 e0 fd ff ff 	lea    -0x220(%rbp),%rax
+  40203a:	48 89 c7             	mov    %rax,%rdi
+  40203d:	e8 5e ee ff ff       	callq  400ea0 <_ZNSt14basic_ofstreamIcSt11char_traitsIcEE5closeEv@plt>
+  402042:	eb 1c                	jmp    402060 <_ZN4life6outputEv+0x12a>
+  402044:	89 d3                	mov    %edx,%ebx
+  402046:	49 89 c4             	mov    %rax,%r12
+  402049:	48 8d 85 e0 fd ff ff 	lea    -0x220(%rbp),%rax
+  402050:	48 89 c7             	mov    %rax,%rdi
+  402053:	e8 38 ee ff ff       	callq  400e90 <_ZNSt14basic_ofstreamIcSt11char_traitsIcEED1Ev@plt>
+  402058:	4c 89 e0             	mov    %r12,%rax
+  40205b:	48 63 d3             	movslq %ebx,%rdx
+  40205e:	eb 11                	jmp    402071 <_ZN4life6outputEv+0x13b>
+  402060:	48 8d 85 e0 fd ff ff 	lea    -0x220(%rbp),%rax
+  402067:	48 89 c7             	mov    %rax,%rdi
+  40206a:	e8 21 ee ff ff       	callq  400e90 <_ZNSt14basic_ofstreamIcSt11char_traitsIcEED1Ev@plt>
+  40206f:	eb 1f                	jmp    402090 <_ZN4life6outputEv+0x15a>
+  402071:	89 d3                	mov    %edx,%ebx
+  402073:	49 89 c4             	mov    %rax,%r12
+  402076:	48 8d 45 e0          	lea    -0x20(%rbp),%rax
+  40207a:	48 89 c7             	mov    %rax,%rdi
+  40207d:	e8 ce ed ff ff       	callq  400e50 <_ZNSsD1Ev@plt>
+  402082:	4c 89 e0             	mov    %r12,%rax
+  402085:	48 63 d3             	movslq %ebx,%rdx
+  402088:	48 89 c7             	mov    %rax,%rdi
+  40208b:	e8 a0 ee ff ff       	callq  400f30 <_Unwind_Resume@plt>
+  402090:	48 8d 45 e0          	lea    -0x20(%rbp),%rax
+  402094:	48 89 c7             	mov    %rax,%rdi
+  402097:	e8 b4 ed ff ff       	callq  400e50 <_ZNSsD1Ev@plt>
+}
+  40209c:	48 81 c4 20 02 00 00 	add    $0x220,%rsp
+  4020a3:	5b                   	pop    %rbx
+  4020a4:	41 5c                	pop    %r12
+  4020a6:	c9                   	leaveq 
+  4020a7:	c3                   	retq   
+
+00000000004020a8 <_ZN4life5inputEv>:
+
+//Inputs a file into the current world
+//This file is specified by the user
+void life::input(){
+  4020a8:	55                   	push   %rbp
+  4020a9:	48 89 e5             	mov    %rsp,%rbp
+  4020ac:	41 54                	push   %r12
+  4020ae:	53                   	push   %rbx
+  4020af:	48 81 ec 30 02 00 00 	sub    $0x230,%rsp
+  4020b6:	48 89 bd c8 fd ff ff 	mov    %rdi,-0x238(%rbp)
+  string filename;
+  4020bd:	48 8d 45 e0          	lea    -0x20(%rbp),%rax
+  4020c1:	48 89 c7             	mov    %rax,%rdi
+  4020c4:	e8 d7 ec ff ff       	callq  400da0 <_ZNSsC1Ev@plt>
+
+  cout << "Please enter the save name: ";
+  4020c9:	be 69 27 40 00       	mov    $0x402769,%esi
+  4020ce:	bf 20 34 60 00       	mov    $0x603420,%edi
+  4020d3:	e8 58 ed ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  cin >> filename;
+  4020d8:	48 8d 45 e0          	lea    -0x20(%rbp),%rax
+  4020dc:	48 89 c6             	mov    %rax,%rsi
+  4020df:	bf 00 33 60 00       	mov    $0x603300,%edi
+  4020e4:	e8 57 ed ff ff       	callq  400e40 <_ZStrsIcSt11char_traitsIcESaIcEERSt13basic_istreamIT_T0_ES7_RSbIS4_S5_T1_E@plt>
+  ifstream input(filename.c_str());
+  4020e9:	48 8d 45 e0          	lea    -0x20(%rbp),%rax
+  4020ed:	48 89 c7             	mov    %rax,%rdi
+  4020f0:	e8 db ec ff ff       	callq  400dd0 <_ZNKSs5c_strEv@plt>
+  4020f5:	48 89 c1             	mov    %rax,%rcx
+  4020f8:	48 8d 85 d0 fd ff ff 	lea    -0x230(%rbp),%rax
+  4020ff:	ba 08 00 00 00       	mov    $0x8,%edx
+  402104:	48 89 ce             	mov    %rcx,%rsi
+  402107:	48 89 c7             	mov    %rax,%rdi
+  40210a:	e8 c1 ed ff ff       	callq  400ed0 <_ZNSt14basic_ifstreamIcSt11char_traitsIcEEC1EPKcSt13_Ios_Openmode@plt>
+  if(!input){
+  40210f:	48 8d 85 d0 fd ff ff 	lea    -0x230(%rbp),%rax
+  402116:	48 05 00 01 00 00    	add    $0x100,%rax
+  40211c:	48 89 c7             	mov    %rax,%rdi
+  40211f:	e8 3c ed ff ff       	callq  400e60 <_ZNKSt9basic_iosIcSt11char_traitsIcEEntEv@plt>
+  402124:	84 c0                	test   %al,%al
+  402126:	74 26                	je     40214e <_ZN4life5inputEv+0xa6>
+    cout << "That file does not exist. Please try again." << endl;
+  402128:	be 98 27 40 00       	mov    $0x402798,%esi
+  40212d:	bf 20 34 60 00       	mov    $0x603420,%edi
+  402132:	e8 f9 ec ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  402137:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  40213c:	48 89 c7             	mov    %rax,%rdi
+  40213f:	e8 9c ed ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+  402144:	bb 00 00 00 00       	mov    $0x0,%ebx
+  402149:	e9 b8 00 00 00       	jmpq   402206 <_ZN4life5inputEv+0x15e>
+    return;
+  }
+
+  for(int i = 0; i < windowHeight-1; ++i){
+  40214e:	c7 45 e8 00 00 00 00 	movl   $0x0,-0x18(%rbp)
+  402155:	eb 56                	jmp    4021ad <_ZN4life5inputEv+0x105>
+    for(int j = 0; j < windowWidth-1; ++j)
+  402157:	c7 45 ec 00 00 00 00 	movl   $0x0,-0x14(%rbp)
+  40215e:	eb 3e                	jmp    40219e <_ZN4life5inputEv+0xf6>
+      input >> world[i][j];
+  402160:	8b 45 e8             	mov    -0x18(%rbp),%eax
+  402163:	8b 55 ec             	mov    -0x14(%rbp),%edx
+  402166:	48 63 ca             	movslq %edx,%rcx
+  402169:	48 63 d0             	movslq %eax,%rdx
+  40216c:	48 89 d0             	mov    %rdx,%rax
+  40216f:	48 c1 e0 02          	shl    $0x2,%rax
+  402173:	48 01 d0             	add    %rdx,%rax
+  402176:	48 c1 e0 04          	shl    $0x4,%rax
+  40217a:	48 8d 04 01          	lea    (%rcx,%rax,1),%rax
+  40217e:	48 89 c2             	mov    %rax,%rdx
+  402181:	48 03 95 c8 fd ff ff 	add    -0x238(%rbp),%rdx
+  402188:	48 8d 85 d0 fd ff ff 	lea    -0x230(%rbp),%rax
+  40218f:	48 89 d6             	mov    %rdx,%rsi
+  402192:	48 89 c7             	mov    %rax,%rdi
+  402195:	e8 b6 ed ff ff       	callq  400f50 <_ZStrsIcSt11char_traitsIcEERSt13basic_istreamIT_T0_ES6_RS3_@plt>
+    cout << "That file does not exist. Please try again." << endl;
+    return;
+  }
+
+  for(int i = 0; i < windowHeight-1; ++i){
+    for(int j = 0; j < windowWidth-1; ++j)
+  40219a:	83 45 ec 01          	addl   $0x1,-0x14(%rbp)
+  40219e:	83 7d ec 4e          	cmpl   $0x4e,-0x14(%rbp)
+  4021a2:	0f 9e c0             	setle  %al
+  4021a5:	84 c0                	test   %al,%al
+  4021a7:	75 b7                	jne    402160 <_ZN4life5inputEv+0xb8>
+  if(!input){
+    cout << "That file does not exist. Please try again." << endl;
+    return;
+  }
+
+  for(int i = 0; i < windowHeight-1; ++i){
+  4021a9:	83 45 e8 01          	addl   $0x1,-0x18(%rbp)
+  4021ad:	83 7d e8 14          	cmpl   $0x14,-0x18(%rbp)
+  4021b1:	0f 9e c0             	setle  %al
+  4021b4:	84 c0                	test   %al,%al
+  4021b6:	75 9f                	jne    402157 <_ZN4life5inputEv+0xaf>
+    for(int j = 0; j < windowWidth-1; ++j)
+      input >> world[i][j];
+  }
+
+  cout << "File inputted." << endl;
+  4021b8:	be c4 27 40 00       	mov    $0x4027c4,%esi
+  4021bd:	bf 20 34 60 00       	mov    $0x603420,%edi
+  4021c2:	e8 69 ec ff ff       	callq  400e30 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+  4021c7:	be 00 0f 40 00       	mov    $0x400f00,%esi
+  4021cc:	48 89 c7             	mov    %rax,%rdi
+  4021cf:	e8 0c ed ff ff       	callq  400ee0 <_ZNSolsEPFRSoS_E@plt>
+
+  input.close();
+  4021d4:	48 8d 85 d0 fd ff ff 	lea    -0x230(%rbp),%rax
+  4021db:	48 89 c7             	mov    %rax,%rdi
+  4021de:	e8 cd eb ff ff       	callq  400db0 <_ZNSt14basic_ifstreamIcSt11char_traitsIcEE5closeEv@plt>
+  4021e3:	bb 01 00 00 00       	mov    $0x1,%ebx
+  4021e8:	eb 1c                	jmp    402206 <_ZN4life5inputEv+0x15e>
+  4021ea:	89 d3                	mov    %edx,%ebx
+  4021ec:	49 89 c4             	mov    %rax,%r12
+  4021ef:	48 8d 85 d0 fd ff ff 	lea    -0x230(%rbp),%rax
+  4021f6:	48 89 c7             	mov    %rax,%rdi
+  4021f9:	e8 82 ec ff ff       	callq  400e80 <_ZNSt14basic_ifstreamIcSt11char_traitsIcEED1Ev@plt>
+  4021fe:	4c 89 e0             	mov    %r12,%rax
+  402201:	48 63 d3             	movslq %ebx,%rdx
+  402204:	eb 29                	jmp    40222f <_ZN4life5inputEv+0x187>
+  402206:	48 8d 85 d0 fd ff ff 	lea    -0x230(%rbp),%rax
+  40220d:	48 89 c7             	mov    %rax,%rdi
+  402210:	e8 6b ec ff ff       	callq  400e80 <_ZNSt14basic_ifstreamIcSt11char_traitsIcEED1Ev@plt>
+  402215:	85 db                	test   %ebx,%ebx
+  402217:	48 8d 45 e0          	lea    -0x20(%rbp),%rax
+  40221b:	48 89 c7             	mov    %rax,%rdi
+  40221e:	e8 2d ec ff ff       	callq  400e50 <_ZNSsD1Ev@plt>
+}
+  402223:	48 81 c4 30 02 00 00 	add    $0x230,%rsp
+  40222a:	5b                   	pop    %rbx
+  40222b:	41 5c                	pop    %r12
+  40222d:	c9                   	leaveq 
+  40222e:	c3                   	retq   
+      input >> world[i][j];
+  }
+
+  cout << "File inputted." << endl;
+
+  input.close();
+  40222f:	89 d3                	mov    %edx,%ebx
+  402231:	49 89 c4             	mov    %rax,%r12
+  402234:	48 8d 45 e0          	lea    -0x20(%rbp),%rax
+  402238:	48 89 c7             	mov    %rax,%rdi
+  40223b:	e8 10 ec ff ff       	callq  400e50 <_ZNSsD1Ev@plt>
+  402240:	4c 89 e0             	mov    %r12,%rax
+  402243:	48 63 d3             	movslq %ebx,%rdx
+  402246:	48 89 c7             	mov    %rax,%rdi
+  402249:	e8 e2 ec ff ff       	callq  400f30 <_Unwind_Resume@plt>
+
+000000000040224e <_Z41__static_initialization_and_destruction_0ii>:
+}
+  40224e:	55                   	push   %rbp
+  40224f:	48 89 e5             	mov    %rsp,%rbp
+  402252:	48 83 ec 10          	sub    $0x10,%rsp
+  402256:	89 7d fc             	mov    %edi,-0x4(%rbp)
+  402259:	89 75 f8             	mov    %esi,-0x8(%rbp)
+  40225c:	83 7d fc 01          	cmpl   $0x1,-0x4(%rbp)
+  402260:	75 2a                	jne    40228c <_Z41__static_initialization_and_destruction_0ii+0x3e>
+  402262:	81 7d f8 ff ff 00 00 	cmpl   $0xffff,-0x8(%rbp)
+  402269:	75 21                	jne    40228c <_Z41__static_initialization_and_destruction_0ii+0x3e>
+  extern wostream wclog;	///< Linked to standard error (buffered)
+#endif
+  //@}
+
+  // For construction of filebuffers for cout, cin, cerr, clog et. al.
+  static ios_base::Init __ioinit;
+  40226b:	bf 40 35 60 00       	mov    $0x603540,%edi
+  402270:	e8 6b eb ff ff       	callq  400de0 <_ZNSt8ios_base4InitC1Ev@plt>
+  402275:	b8 20 0e 40 00       	mov    $0x400e20,%eax
+  40227a:	ba b0 23 40 00       	mov    $0x4023b0,%edx
+  40227f:	be 40 35 60 00       	mov    $0x603540,%esi
+  402284:	48 89 c7             	mov    %rax,%rdi
+  402287:	e8 74 eb ff ff       	callq  400e00 <__cxa_atexit@plt>
+  40228c:	c9                   	leaveq 
+  40228d:	c3                   	retq   
+
+000000000040228e <_GLOBAL__I_main>:
+  40228e:	55                   	push   %rbp
+  40228f:	48 89 e5             	mov    %rsp,%rbp
+  402292:	be ff ff 00 00       	mov    $0xffff,%esi
+  402297:	bf 01 00 00 00       	mov    $0x1,%edi
+  40229c:	e8 ad ff ff ff       	callq  40224e <_Z41__static_initialization_and_destruction_0ii>
+  4022a1:	c9                   	leaveq 
+  4022a2:	c3                   	retq   
+
+00000000004022a3 <_ZStorSt13_Ios_OpenmodeS_>:
+  operator&(_Ios_Openmode __a, _Ios_Openmode __b)
+  { return _Ios_Openmode(static_cast<int>(__a) & static_cast<int>(__b)); }
+
+  inline _Ios_Openmode
+  operator|(_Ios_Openmode __a, _Ios_Openmode __b)
+  { return _Ios_Openmode(static_cast<int>(__a) | static_cast<int>(__b)); }
+  4022a3:	55                   	push   %rbp
+  4022a4:	48 89 e5             	mov    %rsp,%rbp
+  4022a7:	89 7d fc             	mov    %edi,-0x4(%rbp)
+  4022aa:	89 75 f8             	mov    %esi,-0x8(%rbp)
+  4022ad:	8b 55 fc             	mov    -0x4(%rbp),%edx
+  4022b0:	8b 45 f8             	mov    -0x8(%rbp),%eax
+  4022b3:	09 d0                	or     %edx,%eax
+  4022b5:	c9                   	leaveq 
+  4022b6:	c3                   	retq   
+  4022b7:	90                   	nop
+  4022b8:	90                   	nop
+  4022b9:	90                   	nop
+  4022ba:	90                   	nop
+  4022bb:	90                   	nop
+  4022bc:	90                   	nop
+  4022bd:	90                   	nop
+  4022be:	90                   	nop
+  4022bf:	90                   	nop
+
+00000000004022c0 <__libc_csu_fini>:
+  4022c0:	f3 c3                	repz retq 
+  4022c2:	66 66 66 66 66 2e 0f 	data32 data32 data32 data32 nopw %cs:0x0(%rax,%rax,1)
+  4022c9:	1f 84 00 00 00 00 00 
+
+00000000004022d0 <__libc_csu_init>:
+  4022d0:	48 89 6c 24 d8       	mov    %rbp,-0x28(%rsp)
+  4022d5:	4c 89 64 24 e0       	mov    %r12,-0x20(%rsp)
+  4022da:	48 8d 2d 1f 0d 20 00 	lea    0x200d1f(%rip),%rbp        # 603000 <__CTOR_LIST__>
+  4022e1:	4c 8d 25 18 0d 20 00 	lea    0x200d18(%rip),%r12        # 603000 <__CTOR_LIST__>
+  4022e8:	4c 89 6c 24 e8       	mov    %r13,-0x18(%rsp)
+  4022ed:	4c 89 74 24 f0       	mov    %r14,-0x10(%rsp)
+  4022f2:	4c 89 7c 24 f8       	mov    %r15,-0x8(%rsp)
+  4022f7:	48 89 5c 24 d0       	mov    %rbx,-0x30(%rsp)
+  4022fc:	48 83 ec 38          	sub    $0x38,%rsp
+  402300:	4c 29 e5             	sub    %r12,%rbp
+  402303:	41 89 fd             	mov    %edi,%r13d
+  402306:	49 89 f6             	mov    %rsi,%r14
+  402309:	48 c1 fd 03          	sar    $0x3,%rbp
+  40230d:	49 89 d7             	mov    %rdx,%r15
+  402310:	e8 63 ea ff ff       	callq  400d78 <_init>
+  402315:	48 85 ed             	test   %rbp,%rbp
+  402318:	74 1c                	je     402336 <__libc_csu_init+0x66>
+  40231a:	31 db                	xor    %ebx,%ebx
+  40231c:	0f 1f 40 00          	nopl   0x0(%rax)
+  402320:	4c 89 fa             	mov    %r15,%rdx
+  402323:	4c 89 f6             	mov    %r14,%rsi
+  402326:	44 89 ef             	mov    %r13d,%edi
+  402329:	41 ff 14 dc          	callq  *(%r12,%rbx,8)
+  40232d:	48 83 c3 01          	add    $0x1,%rbx
+  402331:	48 39 eb             	cmp    %rbp,%rbx
+  402334:	72 ea                	jb     402320 <__libc_csu_init+0x50>
+  402336:	48 8b 5c 24 08       	mov    0x8(%rsp),%rbx
+  40233b:	48 8b 6c 24 10       	mov    0x10(%rsp),%rbp
+  402340:	4c 8b 64 24 18       	mov    0x18(%rsp),%r12
+  402345:	4c 8b 6c 24 20       	mov    0x20(%rsp),%r13
+  40234a:	4c 8b 74 24 28       	mov    0x28(%rsp),%r14
+  40234f:	4c 8b 7c 24 30       	mov    0x30(%rsp),%r15
+  402354:	48 83 c4 38          	add    $0x38,%rsp
+  402358:	c3                   	retq   
+  402359:	90                   	nop
+  40235a:	90                   	nop
+  40235b:	90                   	nop
+  40235c:	90                   	nop
+  40235d:	90                   	nop
+  40235e:	90                   	nop
+  40235f:	90                   	nop
+
+0000000000402360 <__do_global_ctors_aux>:
+  402360:	55                   	push   %rbp
+  402361:	48 89 e5             	mov    %rsp,%rbp
+  402364:	53                   	push   %rbx
+  402365:	48 83 ec 08          	sub    $0x8,%rsp
+  402369:	48 8b 05 98 0c 20 00 	mov    0x200c98(%rip),%rax        # 603008 <__CTOR_LIST__+0x8>
+  402370:	48 83 f8 ff          	cmp    $0xffffffffffffffff,%rax
+  402374:	74 19                	je     40238f <__do_global_ctors_aux+0x2f>
+  402376:	bb 08 30 60 00       	mov    $0x603008,%ebx
+  40237b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+  402380:	48 83 eb 08          	sub    $0x8,%rbx
+  402384:	ff d0                	callq  *%rax
+  402386:	48 8b 03             	mov    (%rbx),%rax
+  402389:	48 83 f8 ff          	cmp    $0xffffffffffffffff,%rax
+  40238d:	75 f1                	jne    402380 <__do_global_ctors_aux+0x20>
+  40238f:	48 83 c4 08          	add    $0x8,%rsp
+  402393:	5b                   	pop    %rbx
+  402394:	c9                   	leaveq 
+  402395:	c3                   	retq   
+  402396:	90                   	nop
+  402397:	90                   	nop
+
+Disassembly of section .fini:
+
+0000000000402398 <_fini>:
+  402398:	48 83 ec 08          	sub    $0x8,%rsp
+  40239c:	e8 0f ec ff ff       	callq  400fb0 <__do_global_dtors_aux>
+  4023a1:	48 83 c4 08          	add    $0x8,%rsp
+  4023a5:	c3                   	retq   

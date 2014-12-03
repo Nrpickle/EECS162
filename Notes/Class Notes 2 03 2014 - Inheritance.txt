@@ -1,0 +1,38 @@
+
+/*****
+Usefulness of Inheritance
+ - Code reuse
+ 
+Read Section 14.1 of Cake for Inheritance explanation 
+*****/
+
+class Character{
+	public:
+	
+	private:
+}
+
+//This says that the wizard is derived from Character
+class Wizard : public Character{
+	public:
+	
+	private:
+}
+
+/*****
+You still have to call the parent class' constructor. Lecture slide #12
+
+Recommendation: Always explicitly invoke the base class constructor in the initialization section of the derived class constructor.
+
+-Private member variables and member functions are inherited but not accessible to the derived class
+-The derived class needs to call the public accessors and mutators of the base class to change private member variables
+
+Protected member variables
+-Protected member variables and member functions are accessible by: the class itself, and any derived classes
+
+Note important difference
+-Redefining a function definition in a derived class vs overloading a function
+
+*****/
+
+

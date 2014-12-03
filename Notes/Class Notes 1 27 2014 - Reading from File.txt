@@ -1,0 +1,40 @@
+Class Notes 1/27/2014
+
+Example reading code from file:
+
+std::ifstream inStream;
+inStream.open("input.txt");
+if( inStream.fail() )
+{
+  cout << "Input file opening failed. \n";
+  exit(1);
+}
+
+int first, second, third;
+inStream >> first >> second >> third;
+cout << first << " " << second << " " << third << endl;
+inStream.close();
+
+You have to use a C-style string when using inStream.open()
+-Use c_str() on string object to get c string
+
+
+Alternate method:
+
+[open file]
+std::string next;
+while(inStream >> next) {
+  cout << next << " " << endl;
+}
+inStream.close();
+
+
+
+//Hello world!
+#include <iostream>
+using namespace std;
+        
+int main(){
+  cout << "Hello world!" << endl;
+  return 0;
+}

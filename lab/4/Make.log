@@ -1,0 +1,1 @@
+g++ main.cpp -ansi -Wall -std=c++0x -o main
